@@ -225,8 +225,6 @@ ul.labels li .lozenge{
 /*** Fix bug in multiple Up/Down votes icons
   Selector by http://stackoverflow.com/a/8539107/307525
 ***/
-/*
 .action-links > .upvote ~ .upvote, .action-links > .downvote ~ .downvote{
 	display: none;
 }
-*/
