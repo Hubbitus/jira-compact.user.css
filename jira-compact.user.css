@@ -118,7 +118,7 @@ div.command-bar{
 }
 
 .property-list .wrap{
-	padding: 0;
+	padding: 0 !important;
 }
 
 .property-list .wrap strong.name{
