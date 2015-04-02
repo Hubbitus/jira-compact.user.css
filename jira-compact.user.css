@@ -138,6 +138,10 @@ div.command-bar{
 	display: run-in;
 }
 
+.links-list dd .delete-link {
+	top: 0 !important;
+}
+
 /** Edit field */
 .inline-edit-fields{
 	max-width: 91%;
