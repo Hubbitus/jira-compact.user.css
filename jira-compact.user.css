@@ -1,3 +1,8 @@
+@-moz-document regexp("https?://.+?/(browse|secure)/.*"), regexp("https?://.+?/plugins/servlet/gadgets/ifr\\?container=atlassian.*?") {
+/********************************************
+***** Search and Issues
+********************************************/
+
 /* Reset most paddings and margin */
 p, .issue-body-content .module>.mod-content, .issue-body-content .item-details dl>dd, .property-list>li, .property-list>li, .issuePanelWrapper, .tabwrap>.tabs.horizontal>li, #issuetable>tbody>tr>td, #issuetable, .editable-field, .links-list .link-content, .issue-header .issue-header-content>.aui-page-header{
 	padding: 0 !important;
@@ -231,4 +236,162 @@ ul.labels li .lozenge{
 ***/
 .action-links > .upvote ~ .upvote, .action-links > .downvote ~ .downvote{
 	display: none;
+}
+
+/********************************************
+***** Dasboard
+********************************************/
+/* Main */
+body{
+	line-height: 1;
+}
+
+#dashboard-content>.aui-page-header {
+	padding: 0 0 0 50px;
+}
+
+#dashboard>.vertical.tabs {
+	margin: 0;
+	padding: 0;
+    width: 130px;
+}
+
+#dashboard-content .gadget {
+	width: 31.9% !important;
+/*  left: 5px !important;*/
+}
+
+/* 2 columns with different width layout. Unfortunately no other than anchor to colors classes way found to wtyle that */
+#dashboard-content .layout-ba ~ .gadget.color5, #dashboard-content .layout-ba ~ .gadget.color6, #dashboard-content .layout-ba ~ .gadget.color7 {
+	width: 64% !important;
+    padding-left: 66px;
+}
+
+
+/*?? 3 columns .layout-aaa  
+#dashboard>.vertical.tabs {
+  	width: 130px;
+}
+*/
+  
+#dashboard>.vertical.tabs+#dashboard-content{
+	margin-left: 85px;
+	margin-right: -4px;
+}
+
+#dashboard-content .gadget.maximized{
+	width: 96% !important;
+}
+
+#issuetable th, .issue-table th, #issuetable td, .issue-table td{
+	border-right: 1px solid #EAEAEA;
+}
+
+.gadget .count-pagination {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+/* Break words in cells */
+td.nav{
+	word-break: break-all !important;
+}
+
+/* Disable status icons */
+.nav.status img{
+	display: none;
+}
+
+/* Cut Environment column */
+th.headerrow-environment span{
+	width: 22px;
+	overflow: hidden;
+	display: block;
+}
+
+/*
+Iframe gadgets
+*/
+#twodstatstable td, #twodstatstable th, #issuetable td, #issuetable th {
+	padding: 0 !important;
+	font-size: x-small;
+}
+
+/* Block header */
+.gadget .gadget-menu>ul {
+	margin: 1px 0 0 0;
+}
+
+.gadget .dashboard-item-header>.dashboard-item-title {
+	padding: 0px 64px 0px 6px;
+}
+
+.gadget .dashboard-item-header>.gadget-menu {
+	padding-right: 1px;
+}
+
+
+
+#twodstatstable th{
+	word-break: break-all;
+}
+
+#issuetable thead th, #issuetable .status {
+	white-space: normal !important;
+}
+
+#issuetable .fixVersions, #issuetable .assignee{
+	min-width: 0 !important;
+}
+
+.aui-theme-default #content {
+	padding: 6px;
+}
+
+.g-favourite-filters, .g-created-resolved {
+	padding: 0.5em;
+}
+
+/* Settings icon compact */
+.gadget #issuetable{
+	margin: 0 !important;
+}
+
+.gadget #issuetable tr.hover .issue_actions a.aui-dd-link, .gadget .issuetable tr.hover .issue_actions a.aui-dd-link{
+	left: -20px !important;
+}
+#issuetable .issue_actions .aui-dd-parent, .issue-table .issue_actions .aui-dd-parent{
+	width: 9px !important;
+}
+#issuetable .issue_actions, .issue-table .issue_actions{
+	width: 9px !important;
+}
+
+/* Compact issue type icon td */
+#issuetable>thead>tr>th:first-child, .issue-table>thead>tr>th:first-child, #issuetable>tbody>tr>th:first-child, .issue-table>tbody>tr>th:first-child, #issuetable>tbody>tr>td:first-child, .issue-table>tbody>tr>td:first-child{
+	border-left: 0 !important;
+}
+
+.gadget .dashboard-item-header{
+	min-height: 18px;
+}
+
+/* New Chromium 37 fix: hide vertical scrolling in widgets*/
+.view .results-wrap>div{
+	overflow-y: hidden;
+}
+
+/* Labels */
+ul.labels span{
+	font-size: xx-small;
+}
+ul.labels li{
+	overflow: hidden;
+	padding: 0 !important;
+}
+ul.labels li a{
+	overflow: hidden;
+	padding: 1px !important;
+}
+
 }
