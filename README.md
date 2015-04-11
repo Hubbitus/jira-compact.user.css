@@ -14,7 +14,7 @@ Unfortunately I do not known if there present auto installation or check to upda
 
 I use Jira in my day job. It very good famous and extensible bug tracker. But even I use wide monitor additionally to notebook their design seems to me very sprawling.
 
-That style was born several month when I tried there and there reduce elements and spaces beetween, move description right, highlight title and key fields like status…
+That style was born several month when I tried there and there reduce elements and spaces between, move description right, highlight title and key fields like status…
 
 As it style 100 words have worth less than example looks (for simplicity and easy distinguishing I will show screenshots of original Jira in Firefox and in Chromium with that style applied)
 
@@ -35,7 +35,7 @@ Please note - **even more rows and columns in widgets tables - scrolling dissape
 
 3) Issues and its list (search, filter).
 ![List of issues original look](screenshots/List-of-issues-Original.png)
-![List of issues compact view](screenshots/List-of-issues-Conmpact.png)
+![List of issues compact view](screenshots/List-of-issues-Compact.png)
 
 You may see several enhansments here:
 * Issue details from center moved to right. So, yuo start read from problem, meta information also at top right.
