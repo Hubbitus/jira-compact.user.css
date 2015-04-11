@@ -7,8 +7,9 @@ Any feedback welcome!
 For Chrome/Chromium browswers I use it in nice [Stylish](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=ru) extension.
 I have not tested, but should work in [Firefox Stylish](https://addons.mozilla.org/ru/firefox/addon/stylish/) variant too (please let me known if it is not true).
 
-Installation should be easy: Just hit button "Create style" and copy/paste content of file https://raw.githubusercontent.com/Hubbitus/jira-compact.user.css/master/jira-compact.user.css.
-Unfortunately I do not known if there present auto installation or check to updates (so, just return from time to time to changes).
+You may install it from Stylish site: https://userstyles.org/styles/112544/jira-6-1-compact-theme in that case updates will be propogated automatically.
+
+Alternatively: Just click button "Create style" and copy/paste content of file https://raw.githubusercontent.com/Hubbitus/jira-compact.user.css/master/jira-compact.user.css.
 
 ## What it is
 
