@@ -1,4 +1,3 @@
-@-moz-document regexp("https?://.+?/(browse|secure)/.*"), regexp("https?://.+?/plugins/servlet/gadgets/ifr\\?container=atlassian.*?") {
 /********************************************
 ***** Search and Issues
 ********************************************/
@@ -122,6 +121,11 @@ div.command-bar{
 	overflow: auto;
 }
 
+/* search in action */
+.split-view #details-module{
+    width: 29.5%;
+}
+
 .property-list .wrap{
 	padding: 0 !important;
 }
@@ -216,7 +220,7 @@ a.user-hover.user-avatar, span.user-hover.user-avatar {
 /*** Labels ***/
 ul.labels{
 	display: inline-flex;
-	height: 15px;
+	height: 0;
 }
 ul.labels li{
 	padding: 0px 2px 0px 0;
@@ -392,6 +396,4 @@ ul.labels li{
 ul.labels li a{
 	overflow: hidden;
 	padding: 1px !important;
-}
-
 }
