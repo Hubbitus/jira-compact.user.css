@@ -33,11 +33,20 @@ pre{
 }
 
 /*** Compact left list sidebar **/
-.issue-list>li .splitview-issue-link+.splitview-issue-link {
-	/* white-space: nowrap; */
-	white-space: normal;
-	/* display: block; */
-	display: inline;
+.list-panel{
+	padding: 0;
+}
+.issue-list .issue-link-key{
+	display: inline !important;
+	font-size: 80%;
+	font-weight: bold;
+}
+.issue-list .issue-link-key:after{
+	content: ": ";
+}
+.issue-list .issue-link-summary {
+	white-space: normal !important;
+	display: inline !important;
 	font-size: 70%;
 }
 
@@ -45,8 +54,8 @@ pre{
 	overflow-x: visible;
 }
 
-.issue-list>li{
-	padding: 0;
+.issue-list li{
+	padding: 0 !important;
 	line-height: 70%;
 }
 

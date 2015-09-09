@@ -38,10 +38,10 @@ Please note - **even more rows and columns in widgets tables - scrolling dissape
 ![List of issues original look](screenshots/List-of-issues-Original.png)
 ![List of issues compact view](screenshots/List-of-issues-Compact.png)
 
-You may see several enhansments here:
-* Issue details from center moved to right. So, yuo start read from problem, meta information also at top right.
+You may see several enhancments here:
+* Issue details from center moved to right. So, you start read from problem, meta information also at top right.
 * Left list do not truncate issue summary at half of word - instead multiline used.
-* If you use [Threaded comments plugin](https://marketplace.atlassian.com/plugins/com.atlassian.jira.threadedcomments.threaded-comments) there are also few changes - compactnes, highlight odd lines and fir like/dislike bug appearence as a bonus.
+* If you use [Threaded comments plugin](https://marketplace.atlassian.com/plugins/com.atlassian.jira.threadedcomments.threaded-comments) there are also few changes - compactnesss, highlight odd lines and fir like/dislike bug appearence as a bonus.
 ![threaded comments](screenshots/Comments-thread.png)
 
 ## Licensing
