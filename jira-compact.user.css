@@ -406,3 +406,8 @@ ul.labels li a{
 	overflow: hidden;
 	padding: 1px !important;
 }
+
+/* Fix footer to body overlapping */
+.issue-body-content{
+	min-height: 600px;
+}
