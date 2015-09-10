@@ -1,3 +1,4 @@
+@-moz-document regexp("^https?://[^\\/]+/browse/.*") {
 /********************************************
 ***** Search and Issues
 ********************************************/
@@ -410,4 +411,5 @@ ul.labels li a{
 /* Fix footer to body overlapping */
 .issue-body-content{
 	min-height: 600px;
+}
 }
