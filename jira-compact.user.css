@@ -62,11 +62,14 @@ pre{
 
 .list-panel {
 	padding: 0;
-/*	overflow-y: scroll;*/
 }
 
 .split-view .list-results-panel{
 	padding: 0;
+}
+
+.splitview-issue-link br{
+	display: none;
 }
 
 /*** Compact message representation at right **/
