@@ -233,7 +233,7 @@ a.user-hover.user-avatar, span.user-hover.user-avatar {
 /*** Labels ***/
 ul.labels{
 	display: inline-flex;
-	height: 0;
+	/*?? height: 0; */
 }
 ul.labels li{
 	padding: 0px 2px 0px 0;
