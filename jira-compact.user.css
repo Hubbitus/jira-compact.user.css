@@ -7,8 +7,9 @@
 p, .issue-body-content .module>.mod-content, .issue-body-content .item-details dl>dd, .property-list>li, .property-list>li, .issuePanelWrapper, .tabwrap>.tabs.horizontal>li, #issuetable>tbody>tr>td, #issuetable, .editable-field, .links-list .link-content, .issue-header .issue-header-content>.aui-page-header{
 	padding: 0 !important;
 	margin: 0 !important;
-	font-size: x-small;
+	font-size: small;
 	line-height: 0.9em;
+	display: initial;
 }
 
 p:first-letter{
