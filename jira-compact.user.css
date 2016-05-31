@@ -4,13 +4,37 @@
 ********************************************/
 
 /* Reset most paddings and margin */
-p, .issue-body-content .module>.mod-content, .issue-body-content .item-details dl>dd, .property-list>li, .property-list>li, .issuePanelWrapper, .tabwrap>.tabs.horizontal>li, #issuetable>tbody>tr>td, #issuetable, .editable-field, .links-list .link-content, .issue-header .issue-header-content>.aui-page-header{
+p, .issue-body-content .module>.mod-content, .issue-body-content .item-details dl>dd, .property-list>li, .property-list>li, .issuePanelWrapper, .tabwrap>.tabs.horizontal>li, .editable-field, .links-list .link-content, .issue-header .issue-header-content>.aui-page-header{
 	padding: 0 !important;
 	margin: 0 !important;
 	font-size: small;
 	line-height: 0.93em;
 	display: initial;
 }
+
+/** Sub-tasks task list **/
+#issuetable>tbody>tr>td{
+	vertical-align: middle;
+	display: table-cell;
+}
+#issuetable, #issuetable tbody{
+	float: right;
+	border-left: 1px solid #ccc;
+	/*border-right: 1px solid #ccc;*/
+}
+
+#issuetable .subtask-reorder img{
+	display: none;
+}
+.aui-button.aui-button-compact{
+	font-size: 8px;
+	padding: 0 2px;
+	height: 16px;
+}
+.issue-actions-trigger .aui-icon:before{ /* Vertical centering */
+	margin-top: -9px;
+}
+/** /Sub-tasks task list **/
 
 p:first-letter{
 	color: green;
