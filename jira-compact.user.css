@@ -4,12 +4,12 @@
 ********************************************/
 
 /* Reset most paddings and margin */
-p, .issue-body-content .module>.mod-content, .issue-body-content .item-details dl>dd, .property-list>li, .property-list>li, .issuePanelWrapper, .tabwrap>.tabs.horizontal>li, .editable-field, .links-list .link-content, .issue-header .issue-header-content>.aui-page-header{
+p, .issue-body-content .module>.mod-content, .issue-body-content .item-details dl>dd, .property-list>li, .property-list>li, .issuePanelWrapper, .tabwrap>.tabs.horizontal>li, .editable-field, .links-list .link-content, .issue-header .issue-header-content>.aui-page-header, .people-details>dl, .people-details>dl:first-child, .people-details>dl:first-child+dl{
 	padding: 0 !important;
 	margin: 0 !important;
 	font-size: small;
-	line-height: 0.93em;
-	display: initial;
+	line-height: 0.95em;
+/*?	display: initial;*/
 }
 
 /** Sub-tasks task list **/
@@ -208,8 +208,39 @@ div.command-bar{
 #summary-val.editable-field{
 	font-size: 20pt;
 	color: green;
+	width: 100%;
 }
- 
+
+.property-list .item .value, .status-view{
+	padding: 0;
+}
+
+/** Editable fields, task right status **/
+.aui-avatar-small, .aui-avatar-small .aui-avatar-inner, .aui-avatar-small .aui-avatar-inner img {
+	width: 16px;
+	height: 16px;
+}
+.editable-field .overlay-icon, .aui-iconfont-edit {
+	width: 16px;
+}
+.editable-field{
+	min-height: 16px;
+}
+.editable-field .overlay-icon.aui-iconfont-edit:before {
+	left: -1px;
+	top: 8px;
+}
+.editable-field .overlay-icon.aui-iconfont-edit {
+	right: -13px;
+	border: 1px ridge #ccc;
+	border-radius: 3px;
+	top: -1px;
+}
+.issue-body-content .item-details dl>dt{
+	padding: 0;
+}
+/** Editable fields **/
+
 #status-val, #resolution-val, #fixfor-val, #customfield_10040-val{
 	background-color: gold;
 }
@@ -446,5 +477,13 @@ ul.labels li a{
 /* Fix footer to body overlapping */
 .issue-body-content{
 	min-height: 600px;
+}
+
+.links-list dt{
+	padding-top: 0;
+	text-align: right;
+}
+.links-list dd{
+	margin: 0;
 }
 }
