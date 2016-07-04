@@ -1,4 +1,4 @@
-@-moz-document regexp("^https?://[^\\/]+/browse/.*") {
+@-moz-document regexp("^https?://[^\\/]+/browse/.*"), regexp("https?://[^\\/]+/secure/Dashboard.jspa.*") {
 /********************************************
 ***** Search and Issues
 ********************************************/
@@ -397,9 +397,21 @@ Iframe gadgets
 	font-size: x-small;
 }
 
+/** Compact most TD and th **/
+#issuetable>thead>tr>th, .issue-table>thead>tr>th, #issuetable>tbody>tr>th, .issue-table>tbody>tr>th, #issuetable>thead>tr>td, .issue-table>thead>tr>td, #issuetable>tbody>tr>td, .issue-table>tbody>tr>td, #issuetable>tfoot>tr>td, .issue-table>tfoot>tr>td,
+table.aui>thead>tr>th, table.aui>tbody>tr>th, table.aui>thead>tr>td, table.aui>tbody>tr>td, table.aui>tfoot>tr>td, .two-d-container table.aui thead th, .two-d-container table.aui tbody tr:last-child td.totals, .two-d-container table.aui th, .two-d-container table.aui td, .two-d-container .table-container .extra-container{
+	padding: 0;
+	margin: 0;
+}
+
 /* Block header */
 .gadget .gadget-menu>ul {
 	margin: 1px 0 0 0;
+}
+
+/* Hack fix: On Chromium when overflow-x: auto; enabled appeared vertical scrollbar for 1 pixel scroling! */
+.search-results-dashboard-item .search-results-dashboard-item-issue-table{
+	overflow-y: hidden;
 }
 
 .gadget .dashboard-item-header>.dashboard-item-title {
