@@ -252,6 +252,11 @@ div.command-bar{
 #view-subtasks td.stsummary{
 	width: auto; /* was 100% - it give strange issue for heigh increase */
 }
+
+/* Subtask reorder arrows in one line */
+#issuetable .streorder, .issue-table .streorder{
+	width: auto !important;
+}
 /*** /end Issue itself ***/
 
 /*** Comments **/
