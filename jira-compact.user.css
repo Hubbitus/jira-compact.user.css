@@ -12,30 +12,6 @@ p, .issue-body-content .module>.mod-content, .issue-body-content .item-details d
 /*?	display: initial;*/
 }
 
-/** Sub-tasks task list **/
-#issuetable>tbody>tr>td{
-	vertical-align: middle;
-	display: table-cell;
-}
-#issuetable, #issuetable tbody{
-	float: right;
-	border-left: 1px solid #ccc;
-	/*border-right: 1px solid #ccc;*/
-}
-
-#issuetable .subtask-reorder img{
-	display: none;
-}
-.aui-button.aui-button-compact{
-	font-size: 8px;
-	padding: 0 2px;
-	height: 16px;
-}
-.issue-actions-trigger .aui-icon:before{ /* Vertical centering */
-	margin-top: -9px;
-}
-/** /Sub-tasks task list **/
-
 p:first-letter{
 	color: green;
 	/*
@@ -253,10 +229,37 @@ div.command-bar{
 	width: auto; /* was 100% - it give strange issue for heigh increase */
 }
 
-/* Subtask reorder arrows in one line */
-#issuetable .streorder, .issue-table .streorder{
-	width: auto !important;
+/** Sub-tasks task list **/
+#issuetable>tbody>tr>td{
+	vertical-align: middle;
+	display: table-cell;
 }
+#issuetable, #issuetable > tbody{
+	float: right;
+	border-left: 1px solid #ccc;
+}
+
+#issuetable>tbody>tr>td{
+	border-right: 1px solid #EAEAEA; /* Add td borders */
+}
+
+.aui-button.aui-button-compact{
+	font-size: 8px;
+	padding: 0 2px;
+	height: 16px;
+}
+.issue-actions-trigger .aui-icon:before{ /* Vertical centering */
+	margin-top: -9px;
+}
+
+#issuetable .streorder, .issue-table .streorder{
+	width: auto !important; /* reorder arrows in one line */
+}
+
+tr.issuerow>td>div{
+	min-height: 14px; /* To hold full done icon */
+}
+/** /end Sub-tasks task list **/
 /*** /end Issue itself ***/
 
 /*** Comments **/
@@ -367,10 +370,6 @@ body{
 	width: 96% !important;
 }
 
-#issuetable th, .issue-table th, #issuetable td, .issue-table td{
-	border-right: 1px solid #EAEAEA;
-}
-
 .gadget .count-pagination {
 	margin: 0 !important;
 	padding: 0 !important;
@@ -396,7 +395,7 @@ th.headerrow-environment span{
 /*
 Iframe gadgets
 */
-#twodstatstable td, #twodstatstable th, #issuetable td, #issuetable th {
+#twodstatstable td, #twodstatstable th{
 	padding: 0 !important;
 	font-size: x-small;
 }
