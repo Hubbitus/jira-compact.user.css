@@ -143,10 +143,6 @@ div.command-bar{
 }
 
 /* search in action */
-.split-view #details-module{
-    width: 29.5%;
-}
-
 .property-list .wrap{
 	padding: 0 !important;
 }
@@ -501,4 +497,34 @@ ul.labels li a{
 .links-list dd{
 	margin: 0;
 }
+
+/* Pie chart */
+.piechart-gadget, .piechart-gadget .piechart-wrapper, .piechart-gadget .legend-content, .piechart-gadget .legend-item-label, .piechart-gadget .legend-icon{
+	padding: 0;
+	margin: 0 !important;
+}
+
+.piechart-gadget .piechart-wrapper{
+	float: left;
+}
+
+.legend-title h3{
+	float: left;
+}
+
+.piechart-with-legend .legend-wrapper{ /* Legend table: Compact and float left: */
+	display: table;
+	width: auto;
+}
+
+/* Place Legend partially ON svg chart (https://css-tricks.com/scale-svg/) */
+/* svg{
+	width: 100%; padding-bottom: 47%; height: 1px; overflow: visible;
+}
+*/
+/* /Pie chart */
+
+/********************************************
+***** /End Dasboard
+********************************************/
 }
