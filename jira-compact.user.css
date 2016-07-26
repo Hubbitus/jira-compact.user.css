@@ -12,6 +12,10 @@ p, .issue-body-content .module>.mod-content, .issue-body-content .item-details d
 /*?	display: initial;*/
 }
 
+p {
+    text-indent: 1em;
+}
+
 p:first-letter{
 	color: green;
 	/*
@@ -186,6 +190,15 @@ div.command-bar{
 .property-list .item .value, .status-view{
 	padding: 0;
 }
+
+/* Show linked issues full list */
+.collapsed-link {
+    display: inherit;
+}
+#show-more-links{
+	display: none;
+}
+/* /Show linked issues full list */
 
 /** Editable fields, task right status **/
 .aui-avatar-small, .aui-avatar-small .aui-avatar-inner, .aui-avatar-small .aui-avatar-inner img {
@@ -386,6 +399,10 @@ th.headerrow-environment span{
 	width: 22px;
 	overflow: hidden;
 	display: block;
+}
+
+.two-d-container table.aui tbody .scope{
+	min-width: 0; /* Default "Status" td was 140px in tables */
 }
 
 /*
