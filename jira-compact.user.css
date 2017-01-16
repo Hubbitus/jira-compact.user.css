@@ -262,7 +262,21 @@ div.command-bar{
 }
 
 #issuetable .streorder, .issue-table .streorder{
-	width: auto !important; /* reorder arrows in one line */
+	width: 32px !important; /* reorder arrows in one line */
+}
+
+td.stsequence div{
+	display: block;
+	width: 0.7em;
+	background-image: none !important;
+}
+
+td.stsequence div:after{
+	content: "✓";
+	width: 0.7em;
+	color: green;
+	position: relative;
+	font-weight: bold;
 }
 
 tr.issuerow>td>div{
