@@ -466,6 +466,11 @@ table.aui>thead>tr>th, table.aui>tbody>tr>th, table.aui>thead>tr>td, table.aui>t
 	min-width: 0 !important;
 }
 
+/* Compact dates */
+.issuerow td.created time, .issuerow td.updated time{
+	font-size: xx-small;
+}
+
 .aui-theme-default #content {
 	padding: 6px;
 }
