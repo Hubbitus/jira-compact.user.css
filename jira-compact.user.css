@@ -191,14 +191,14 @@ div.command-bar{
 	padding: 0;
 }
 
-/* Show linked issues full list */
-.collapsed-link {
+/* Show linked issues full list always */
+.collapsed-link, .collapsed-links-list{
     display: inherit;
 }
 #show-more-links{
 	display: none;
 }
-/* /Show linked issues full list */
+/* /Show linked issues full list always */
 
 /** Editable fields, task right status **/
 .aui-avatar-small, .aui-avatar-small .aui-avatar-inner, .aui-avatar-small .aui-avatar-inner img {
