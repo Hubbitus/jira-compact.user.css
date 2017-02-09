@@ -282,6 +282,16 @@ td.stsequence div:after{
 tr.issuerow>td>div{
 	min-height: 14px; /* To hold full done icon */
 }
+
+/* Done percentage */
+#issuetable td.tt_graph_percentage p{
+	font-size: 11px;
+	width: 3.2em !important;
+}
+#issuetable td.tt_graph_percentage p:first-letter{
+	border: none;
+}
+
 /** /end Sub-tasks task list **/
 /*** /end Issue itself ***/
 
