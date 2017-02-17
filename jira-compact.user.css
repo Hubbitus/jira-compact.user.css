@@ -9,7 +9,6 @@ p, .issue-body-content .module>.mod-content, .issue-body-content .item-details d
 	margin: 0 !important;
 	font-size: small;
 	line-height: 0.95em;
-/*?	display: initial;*/
 }
 
 p {
@@ -46,9 +45,14 @@ code, kbd, tt {
     padding: 0 3px;
 }
 
-/*** Compact left list sidebar **/
+/***************************************/
+/*** Compact left search list sidebar **/
+/***************************************/
 .list-panel{
-	padding: 0;
+	padding: 0 !important;
+}
+.details-layout .split-view .list-results-panel{
+	padding-left: 2px;
 }
 .issue-list .issue-link-key{
 	display: inline !important;
@@ -65,7 +69,7 @@ code, kbd, tt {
 }
 
 .issue-list{
-	overflow-x: visible;
+	overflow: inherit !important;
 }
 
 .issue-list li{
@@ -84,6 +88,15 @@ code, kbd, tt {
 .splitview-issue-link br{
 	display: none;
 }
+
+.details-layout .split-view .list-results-panel .list-panel .issue-list>li img { /* Issue type icon */
+    height: 11px;
+	width: 11px;
+}
+/********************************************/
+/*** end/ Compact left search list sidebar **/
+/********************************************/
+
 
 /*** Compact message representation at right **/
 .module{
@@ -155,8 +168,6 @@ div.command-bar{
 	margin-left: 0;
 	font-weight: bold;
 	padding: 0 5px 0 0;
-/*    font-size: 120%;
-    text-decoration: underline;*/
 }
 
 .property-list .item .name{
@@ -178,7 +189,6 @@ div.command-bar{
 	padding-left: 1em;
 }
 /*** end "Details move to right" **/
-
 
 /*** Issue itself ***/
 #summary-val.editable-field{
