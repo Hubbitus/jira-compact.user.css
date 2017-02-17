@@ -238,6 +238,11 @@ div.command-bar{
 	width: auto; /* was 100% - it give strange issue for heigh increase */
 }
 
+/* Buttons and menus on issue like "edit", "comment", "assign"… */
+.aui-toolbar .toolbar-group .toolbar-trigger, .aui-toolbar .aui-dd-parent a.aui-dd-trigger {
+	height: 17px;
+}
+
 /** Sub-tasks task list **/
 #issuetable>tbody>tr>td{
 	vertical-align: middle;
