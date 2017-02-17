@@ -45,6 +45,11 @@ code, kbd, tt {
     padding: 0 3px;
 }
 
+/* Filter name header */
+.saved-search-selector{
+	padding: 0;
+}
+
 /***************************************/
 /*** Compact left search list sidebar **/
 /***************************************/
