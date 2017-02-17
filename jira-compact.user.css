@@ -296,8 +296,18 @@ tr.issuerow>td>div{
 #issuetable td.tt_graph_percentage p:first-letter{
 	border: none;
 }
-
 /** /end Sub-tasks task list **/
+
+/** Epic-issues list **/
+.ghx-issuetable td {
+	line-height: 1;
+    padding: 0;
+}
+.ghx-issuetable .issue_actions .aui-dd-parent {
+	height: 16px;
+}
+/** /end Epic-issues list **/
+
 /*** /end Issue itself ***/
 
 /*** Comments **/
