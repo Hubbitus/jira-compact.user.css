@@ -50,6 +50,11 @@ code, kbd, tt {
 	padding: 0;
 }
 
+/* Issue status labels */
+.aui-lozenge{
+	padding: 1px 2px;
+}
+
 /***************************************/
 /*** Compact left search list sidebar **/
 /***************************************/
@@ -277,6 +282,13 @@ div.command-bar{
 	padding: 0 2px;
 	height: 16px;
 }
+.issue_actions .aui-icon-small{
+	width: 1px;
+}
+.subtask-reorder .aui-icon-small {
+    height: 15px;
+    width: 15px;
+}
 .issue-actions-trigger .aui-icon:before{ /* Vertical centering */
 	margin-top: -9px;
 }
@@ -378,6 +390,9 @@ ul.labels li .lozenge{
 }
 .editable-field .overlay-icon.icon-edit-sml{
 	background-position-y: 0;
+}
+ul.labels li .lozenge{
+	margin: 0;
 }
 /*** /end Labels ***/
 
