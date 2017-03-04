@@ -1,4 +1,4 @@
-@-moz-document regexp("^https?://[^\\/]+/browse/.*"), regexp("https?://[^\\/]+/secure/Dashboard.jspa.*") {
+@-moz-document regexp("^https?://[^\\/]+/browse/.*"), regexp("^https?://[^\\/]+/secure/Dashboard.jspa.*") {
 /********************************************
 ***** Search and Issues
 ********************************************/
@@ -152,12 +152,9 @@ div.command-bar{
 
 /* Description block at right and do not wider than content, but not edit form */
 #description-val{
-	float: right;
+/*	float: right; // It do smaller with on small test content, but it also break editor */
 	color: brown;
-}
-#description-val div.wiki-edit{
-	min-width: 80em;
-	position: relative;
+	width: 100%;
 }
 
 #details-module{
@@ -182,7 +179,7 @@ div.command-bar{
 
 .property-list .item .name{
 	width: auto;
-	min-width: 11em;
+	min-width: 9em;
 }
 
 .property-list .item .value{
@@ -194,9 +191,8 @@ div.command-bar{
 }
 
 /** Edit field */
-.inline-edit-fields{
-	max-width: 91%;
-	padding-left: 1em;
+.editable-field form.aui{
+	margin: 0;
 }
 /*** end "Details move to right" **/
 
