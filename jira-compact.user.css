@@ -157,13 +157,25 @@ div.command-bar{
 	width: 100%;
 }
 
-#details-module{
+/* #details-module{ - That is all details of Issue including: "Custom description", "Test Case", "Epic link" +
+#issuedetails include only base common fields like: Type, Priority, Status…
+*/
+#issuedetails{
 	padding-left: 0.3em !important;
 	position: absolute;
 	right: 4px;
 	width: 35%;
 	max-height: 10.1em;
 	overflow: auto;
+}
+/* Hide "Custom description" label */
+#rowForcustomfield_10800 div strong{
+	display: none;
+}
+.mod-content .type-textarea{
+	float: right;
+	font-size: 90%;
+	margin-right: 10px !important;
 }
 
 /* search in action */
