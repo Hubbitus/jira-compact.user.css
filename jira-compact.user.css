@@ -482,6 +482,16 @@ th.headerrow-environment span{
 	min-width: 0; /* Default "Status" td was 140px in tables */
 }
 
+/** Allow break long task statuses by full words like "Selected for development" **/
+.issue-table .status{
+	white-space: normal;
+	text-align: center;
+}
+.jira-issue-status-lozenge{
+	word-break: keep-all;
+	white-space: pre-line;
+}
+
 /*
 Iframe gadgets
 */

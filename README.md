@@ -46,3 +46,27 @@ You may see several enhancments here:
 
 ## Licensing
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
+
+## Changelog
+
+2017-10-18 Allow break long task statuses by full words like "Selected for development"
+2017-06-14 Add support of custom text-fields in issue
+2017-03-04 Fix main task description edit with issue
+2017-02-27 Decrease labels padding for dashboards, smaller issue-list action button, fix issues sub-list line doubling due to the icons
+2017-02-17 Fix scrolling and tune some other styles like icons in issues search left navigation list
+2017-02-17 Compact also Epic issues list in issue
+2017-02-17 Fix height of buttons and menus on issue like "edit", "comment", "assign"… 
+2017-02-09 Issues sub-list correct percentage column style
+2017-02-01 Fix linked issues sub-list always full
+2017-01-24 Compact dates in dashboards widgets
+2017-01-16 Fix row ordering arrows in one line in sub-tasks list. Compact (v) sign on completed sub-tasks
+2016-07-26 Show linked issues full list
+2016-07-21 Compact style also pie-chart on dashboard
+2016-07-12 Fix issue with time spent/remaining bars in sub-tasks
+2016-07-12 In sub-tasks task list arrows for reordering place in one line to decrease height
+2016-07-11 Allow wrap labels in td
+2016-07-04 Update to fresh Jira styling of dashboards.
+2016-06-02 Format editable fields and icons
+2016-05-31 Fix sub-tasks list and editing area.
+2016-04-15 Fix line height (introduced by previous font size change). Add terms (code, kbd, tt) highlight.
+2016-04-14 Change main font to slightly large (x-small -> small) to normal distinguish bold. Fix editable for Jira version 6.4.11
