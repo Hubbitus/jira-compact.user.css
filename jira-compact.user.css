@@ -24,7 +24,6 @@ p:first-letter{
 	border-bottom: 1px solid darkgreen;
 	border-radius: 0.2em;
 	text-transform: uppercase; /* quirqs */
-	line-height: 1.4em;
 }
 
 blockquote{
@@ -500,11 +499,23 @@ Iframe gadgets
 	font-size: x-small;
 }
 
+/** Widgets header margin **/
+#issuetable, .issue-table{
+	margin: 0;
+}
+
+/* Issue table head by center */
+.issue-table th{
+	text-align: center !important;
+}
+
 /** Compact most TD and th **/
 #issuetable>thead>tr>th, .issue-table>thead>tr>th, #issuetable>tbody>tr>th, .issue-table>tbody>tr>th, #issuetable>thead>tr>td, .issue-table>thead>tr>td, #issuetable>tbody>tr>td, .issue-table>tbody>tr>td, #issuetable>tfoot>tr>td, .issue-table>tfoot>tr>td,
 table.aui>thead>tr>th, table.aui>tbody>tr>th, table.aui>thead>tr>td, table.aui>tbody>tr>td, table.aui>tfoot>tr>td, .two-d-container table.aui thead th, .two-d-container table.aui tbody tr:last-child td.totals, .two-d-container table.aui th, .two-d-container table.aui td, .two-d-container .table-container .extra-container{
-	padding: 0;
+	padding: 0 !important; /* !important required for firefox */
 	margin: 0;
+    border: 1px solid #cccccc4d;
+    vertical-align: middle;
 }
 
 /* Block header */

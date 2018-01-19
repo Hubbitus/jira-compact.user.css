@@ -49,6 +49,10 @@ Work distributed under terms of [CC BY - Creative Commons Attribution](http://cr
 
 ## Changelog
 
+2018-01-19 Firefox compatability fix for gadgets
+
+- Drop line-height: 1.4em; for p::first-letter
+- For gadgets table allign header by center and all cells by middle vertically.
 2017-10-18 Allow break long task statuses by full words like "Selected for development"
 2017-06-14 Add support of custom text-fields in issue
 2017-03-04 Fix main task description edit with issue
