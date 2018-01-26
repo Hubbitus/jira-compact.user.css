@@ -1,4 +1,4 @@
-@-moz-document regexp("^https?://[^\\/]+/browse/.*"), regexp("^https?://[^\\/]+/secure/Dashboard.jspa.*") {
+@-moz-document regexp("^https?://jira\\..*") {
 /********************************************
 ***** Search and Issues
 ********************************************/

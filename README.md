@@ -48,7 +48,7 @@ You may see several enhancments here:
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
-
+2018-01-26 Change applying regexp for all domains starting from "jira."
 2018-01-19 Firefox compatability fix for gadgets
 
 - Drop line-height: 1.4em; for p::first-letter
@@ -59,7 +59,7 @@ Work distributed under terms of [CC BY - Creative Commons Attribution](http://cr
 2017-02-27 Decrease labels padding for dashboards, smaller issue-list action button, fix issues sub-list line doubling due to the icons
 2017-02-17 Fix scrolling and tune some other styles like icons in issues search left navigation list
 2017-02-17 Compact also Epic issues list in issue
-2017-02-17 Fix height of buttons and menus on issue like "edit", "comment", "assign"… 
+2017-02-17 Fix height of buttons and menus on issue like "edit", "comment", "assign"…
 2017-02-09 Issues sub-list correct percentage column style
 2017-02-01 Fix linked issues sub-list always full
 2017-01-24 Compact dates in dashboards widgets
