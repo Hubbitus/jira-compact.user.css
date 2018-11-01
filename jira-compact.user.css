@@ -225,6 +225,7 @@ div.command-bar{
 #show-more-links{
 	display: none;
 }
+
 /* /Show linked issues full list always */
 
 /** Editable fields, task right status **/
@@ -275,10 +276,13 @@ div.command-bar{
 	vertical-align: middle;
 	display: table-cell;
 }
+/*
+??? That breaks issues list on filter
 #issuetable, #issuetable > tbody{
 	float: right;
 	border-left: 1px solid #ccc;
 }
+*/
 
 #issuetable>tbody>tr>td{
 	border-right: 1px solid #EAEAEA; /* Add td borders */
@@ -329,6 +333,10 @@ tr.issuerow>td>div{
 }
 #issuetable td.tt_graph_percentage p:first-letter{
 	border: none;
+}
+
+.issuerow .assignee{
+	white-space: nowrap;
 }
 /** /end Sub-tasks task list **/
 
