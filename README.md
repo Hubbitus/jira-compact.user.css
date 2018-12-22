@@ -48,6 +48,7 @@ You may see several enhancments here:
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
+2018-12-22 Show linked issues full list always with scrolling in blocks
 2018-11-01 Do not wrap assignee in epic tasks list
 2018-01-26 Change applying regexp for all domains starting from "jira."
 2018-01-19 Firefox compatability fix for gadgets

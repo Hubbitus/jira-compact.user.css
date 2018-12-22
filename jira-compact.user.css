@@ -1,4 +1,4 @@
-@-moz-document regexp("^https?://jira\\..*") {
+@-moz-document regexp("^https?://jira\\..*"), regexp("^https?://.*/jira/.*") {
 /********************************************
 ***** Search and Issues
 ********************************************/
@@ -218,14 +218,21 @@ div.command-bar{
 	padding: 0;
 }
 
-/* Show linked issues full list always */
+/* Show linked issues full list always with scrolling in blocks */
 .collapsed-link, .collapsed-links-list{
     display: inherit;
+}
+.mod-content dl.links-list{
+	overflow-y: auto;
+	max-height: 9em;
 }
 #show-more-links{
 	display: none;
 }
-
+.links-list dd:hover .delete-link a, .links-list dd .delete-link a:focus{
+	top: 0;
+	right: 1px; /* Fix to do not appear horiaontal scrolling*/
+}
 /* /Show linked issues full list always */
 
 /** Editable fields, task right status **/
