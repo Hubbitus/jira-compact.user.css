@@ -27,7 +27,7 @@ p:first-letter{
 }
 
 blockquote{
-	padding: 0px 2px;
+	padding: 0 2px;
 	margin: 0 19px;
 }
 
@@ -39,7 +39,7 @@ pre{
 /* Highlight terms */
 code, kbd, tt {
     font-family: monospace;
-    background-color: rgba(0,0,0,0.07);
+	background-color: #F3F3F3;
     border-radius: 4px;
     padding: 0 3px;
 }
@@ -233,7 +233,7 @@ div.command-bar{
 	display: none;
 }
 .links-list dd:hover .delete-link a, .links-list dd .delete-link a:focus{
-	top: 0;
+	top: 0 !important;
 	right: 1px; /* Fix to do not appear horiaontal scrolling*/
 }
 /* /Show linked issues full list always */
