@@ -436,6 +436,15 @@ body{
 	line-height: 1;
 }
 
+/* Do not indent and transform <p> in dashboard tables */
+#dashboard p::first-letter{
+	text-transform: inherit;
+}
+#dashboard p{
+	text-indent: inherit;
+}
+/* /Do not indent and transform <p> in dashboard tables */
+
 #dashboard-content>.aui-page-header {
 	padding: 0 0 0 50px;
 }
@@ -662,6 +671,35 @@ ul.labels li a{
 */
 /* /Pie chart */
 
+/* Gone spacing between gadgets */
+.layout .column .gadget, .layout .column .placeholder, .layout .column.empty .empty-text{
+	margin-bottom: 0;
+}
+.layout .column{
+	margin-left: 11px;
+	margin-right: 12px;
+}
+.layout{
+	padding: 0;
+	margin: 0;
+}
+
+/* Dashboard left dashmoardl list make compact and with bullets */
+.dashboard-tabs .aui-nav{
+	width: 100%;
+}
+.aui-nav, .aui-nav > li{
+	padding: 0 0 0 1em;
+	list-style-type: disclosure-closed;
+}
+.aui-nav-vertical > li > a, .aui-navgroup-vertical .aui-nav > li > a{
+	position: relative;
+	left: -1em;
+	padding: 1px 0;
+}
+#dashboard > .vertical.tabs + #dashboard-content{
+	margin-left: 130px;
+}
 /********************************************
 ***** /End Dasboard
 ********************************************/

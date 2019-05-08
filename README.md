@@ -1,5 +1,5 @@
 # jira-compact.user.css
-Css styles to compact jira (>=6.1) representation. For example to use with Stylish Chromium and Firefox extension
+Css styles to compact jira (>=6.1) representation (now support up to version 8.1). For example to use with Stylish Chromium and Firefox extension
 
 Any feedback welcome!
 
@@ -48,6 +48,7 @@ You may see several enhancments here:
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
+2019-05-08 Styling dashboards left list and widgets spacing. Do not indent <p> in dashboards. Support Jira 8.1.
 2019-03-11 Fix epic linked tasks table glitch
 2019-02-03 Fix status labels break on epic issues list
 2018-12-22 Show linked issues full list always with scrolling in blocks
