@@ -54,7 +54,7 @@ code, kbd, tt {
 	padding: 1px 2px;
 }
 td.status .aui-lozenge{
-	white-space: nowrap;
+	/* white-space: nowrap; */
 }
 
 /***************************************/
@@ -514,7 +514,7 @@ th.headerrow-environment span{
 	text-align: center;
 }
 .jira-issue-status-lozenge{
-	word-break: keep-all;
+	/* word-break: keep-all; NOT-Wrap of long statuses like READY-FOR-DEVELOPMENT */
 	white-space: pre-line;
 }
 
@@ -700,7 +700,55 @@ ul.labels li a{
 #dashboard > .vertical.tabs + #dashboard-content{
 	margin-left: 130px;
 }
+
+/* Two dimensional filter statistic */
+.two-d-container table.aui .default_image.default_image_component{ /* hide icons in header */
+	background-image: none;
+}
+
+.two-d-container .data-footer{ /* Compact footer total line*/
+	padding: 0;
+}
+.two-d-container .table-container .extra-container{
+	padding: 0 0 3px 0 !important;
+}
+
+table.aui > tbody > tr > th, table.aui > tbody > tr > td{
+	font-size: 90%;
+	line-height: 1;
+}
+.two-d-container tbody{
+	margin-bottom: 100px !important;
+}
+/* /Two dimensional filter statistic */
 /********************************************
 ***** /End Dasboard
+********************************************/
+
+/********************************************
+***** Footer
+********************************************/
+.aui-theme-default #content{
+	padding: 0;
+}
+
+#footer .footer-body{
+	margin: 0;
+}
+
+#footer-logo {
+	display: none;
+}
+
+footer .footer-body{
+	padding: 0 !important;
+	min-height: 0 !important;
+}
+
+footer .footer-body ul:nth-child(2n){ /* Strange empty div 'licensemessage' */
+	display: none !important;
+}
+/********************************************
+***** /Footer
 ********************************************/
 }
