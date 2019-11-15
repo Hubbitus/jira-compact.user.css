@@ -298,6 +298,11 @@ div.command-bar{
 	border-right: 1px solid #EAEAEA; /* Add td borders */
 }
 
+/* Base 16px is too small for status. Issues list in Epic */
+#issuetable .status{
+	width: inherit;
+}
+
 .aui-button.aui-button-compact{
 	font-size: 8px;
 	padding: 0 2px;
@@ -340,6 +345,7 @@ tr.issuerow>td>div{
 #issuetable td.tt_graph_percentage p{
 	font-size: 11px;
 	width: 3.2em !important;
+	text-indent: 0;
 }
 #issuetable td.tt_graph_percentage p:first-letter{
 	border: none;
