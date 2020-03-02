@@ -48,6 +48,7 @@ You may see several enhancments here:
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
+2020-03-02 Compact Kanban board
 2020-02-14 Compact tables in dashboard widgets
 2019-11-15 Fix issues list in Epic: Fix width of status and percentage column.
 2019-11-05 Add styling of "Two dimensional filter statistic" gadget

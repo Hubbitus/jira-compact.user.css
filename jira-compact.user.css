@@ -771,4 +771,102 @@ footer .footer-body ul:nth-child(2n){ /* Strange empty div 'licensemessage' */
 /********************************************
 ***** /Footer
 ********************************************/
+
+/********************************************
+***** Kanban board
+********************************************/
+
+/** Header **/
+/** Filters **/
+span.subnav-container {
+	display: inline-block;
+}
+#ghx-header{
+	padding: 0;
+}
+
+#ghx-operations {
+	padding: 0 2px;
+}
+.ghx-controls-filters dt, .ghx-controls-filters dd {
+	margin: 0;
+}
+.ghx-controls-filters dd a {
+	padding: 0 1px;
+	text-decoration: underline;
+	background-color: lightsteelblue;
+}
+/** /Filters **/
+
+.ghx-column-headers .ghx-column {
+	padding: 0;
+}
+.ghx-rapid-views #gh #ghx-work #ghx-pool-column .ghx-swimlane .ghx-swimlane-header {
+	top: 0;
+}
+.ghx-swimlane-header .ghx-heading {
+	margin: 0;
+}
+/** /Header **/
+
+/** Cards **/
+.ghx-issue-fields .ghx-key{ /* Issue key on same line as title */
+	float: left;
+	font-weight: bold;
+
+	background-color: lightblue;
+	border-radius: 6px;
+	margin: 1px;
+	padding: 0px 2px;
+}
+.ghx-issue {
+	padding: 0 5px;
+}
+
+.ghx-issue .ghx-extra-fields .ghx-extra-field-row {
+	float: left;
+	font-size: x-small;
+}
+
+.ghx-extra-field::before {
+	content: "⸨" attr(data-tooltip) "⸩";
+	border: 2px dotted lightblue;
+	border-radius: 6px;
+	margin-right: 2px;
+	color: black;
+}
+.ghx-extra-field{
+	display: none;
+}
+
+.ghx-issue .ghx-highlighted-fields {
+	margin-top: 4px;
+}
+
+.ghx-card-footer {
+	margin-top: 0;
+}
+
+.ghx-issue .ghx-issue-content {
+	min-height: auto;
+}
+
+.ghx-issue .ghx-card-footer {
+	margin: 0;
+}
+.ghx-issue .ghx-card-footer div:not(:last-child){
+	margin-bottom: 2px;
+}
+
+.ghx-issue .ghx-extra-fields {
+	margin: 0;
+}
+.ghx-issue-fields .ghx-summary {
+	font-weight: bold;
+	font-size: small;
+}
+/** /Cards **/
+/********************************************
+***** /Kanban board
+********************************************/
 }
