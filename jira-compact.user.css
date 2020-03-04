@@ -612,7 +612,7 @@ table.aui>thead>tr>th, table.aui>tbody>tr>th, table.aui>thead>tr>td, table.aui>t
 }
 
 /* Widget tables (like tasks filter list) */
-.issue-table, .issuerow p, .issuerow span{
+.issue-table, .issuerow p, .issuerow span, .issuerow td, .aui-label, a.aui-label{
 	font-size: x-small;
 }
 
