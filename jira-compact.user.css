@@ -708,7 +708,7 @@ ul.labels li a{
 .dashboard-tabs .aui-nav{
 	width: 100%;
 }
-.aui-nav, .aui-nav > li{
+.dashboard-tabs.vertical .aui-nav, .dashboard-tabs.vertical .aui-nav > li{
 	padding: 0 0 0 1em;
 	list-style-type: disclosure-closed;
 }
