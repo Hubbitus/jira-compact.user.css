@@ -48,6 +48,7 @@ You may see several enhancments here:
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
+2020-03-06 Fix Kanban board avatar placement for very short tasks summary (with little height of card)
 2020-03-04 Compact issue tables Status and Epic columns, fix list artifacts in top-right corner menu (like "Help", "Administration")
 2020-03-02 Compact Kanban board
 2020-02-14 Compact tables in dashboard widgets

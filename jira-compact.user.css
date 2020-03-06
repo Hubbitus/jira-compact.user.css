@@ -865,6 +865,11 @@ span.subnav-container {
 	font-weight: bold;
 	font-size: small;
 }
+
+.ghx-issue .ghx-avatar {
+    right: -3px;
+    top: 1px;
+}
 /** /Cards **/
 /********************************************
 ***** /Kanban board
