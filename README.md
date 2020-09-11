@@ -48,40 +48,43 @@ You may see several enhancments here:
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
-2020-03-06 Fix Kanban board avatar placement for very short tasks summary (with little height of card)
-2020-03-04 Compact issue tables Status and Epic columns, fix list artifacts in top-right corner menu (like "Help", "Administration")
-2020-03-02 Compact Kanban board
-2020-02-14 Compact tables in dashboard widgets
-2019-11-15 Fix issues list in Epic: Fix width of status and percentage column.
-2019-11-05 Add styling of "Two dimensional filter statistic" gadget
-2019-05-08 Styling dashboards left list and widgets spacing. Do not indent <p> in dashboards. Support Jira 8.1.
-2019-03-11 Fix epic linked tasks table glitch
-2019-02-03 Fix status labels break on epic issues list
-2018-12-22 Show linked issues full list always with scrolling in blocks
-2018-11-01 Do not wrap assignee in epic tasks list
-2018-01-26 Change applying regexp for all domains starting from "jira."
-2018-01-19 Firefox compatability fix for gadgets
-
-- Drop line-height: 1.4em; for p::first-letter
-- For gadgets table allign header by center and all cells by middle vertically.
-2017-10-18 Allow break long task statuses by full words like "Selected for development"
-2017-06-14 Add support of custom text-fields in issue
-2017-03-04 Fix main task description edit with issue
-2017-02-27 Decrease labels padding for dashboards, smaller issue-list action button, fix issues sub-list line doubling due to the icons
-2017-02-17 Fix scrolling and tune some other styles like icons in issues search left navigation list
-2017-02-17 Compact also Epic issues list in issue
-2017-02-17 Fix height of buttons and menus on issue like "edit", "comment", "assign"…
-2017-02-09 Issues sub-list correct percentage column style
-2017-02-01 Fix linked issues sub-list always full
-2017-01-24 Compact dates in dashboards widgets
-2017-01-16 Fix row ordering arrows in one line in sub-tasks list. Compact (v) sign on completed sub-tasks
-2016-07-26 Show linked issues full list
-2016-07-21 Compact style also pie-chart on dashboard
-2016-07-12 Fix issue with time spent/remaining bars in sub-tasks
-2016-07-12 In sub-tasks task list arrows for reordering place in one line to decrease height
-2016-07-11 Allow wrap labels in td
-2016-07-04 Update to fresh Jira styling of dashboards.
-2016-06-02 Format editable fields and icons
-2016-05-31 Fix sub-tasks list and editing area.
-2016-04-15 Fix line height (introduced by previous font size change). Add terms (code, kbd, tt) highlight.
-2016-04-14 Change main font to slightly large (x-small -> small) to normal distinguish bold. Fix editable for Jira version 6.4.11
+* 2020-09-11 For fresh JIRA fixes:
+  - Compact left issues list in filter.
+  - Fix project administration pabe headers
+  - Issue "details" heder move right to details itself.
+* 2020-03-06 Fix Kanban board avatar placement for very short tasks summary (with little height of card)
+* 2020-03-04 Compact issue tables Status and Epic columns, fix list artifacts in top-right corner menu (like "Help", "Administration")
+* 2020-03-02 Compact Kanban board
+* 2020-02-14 Compact tables in dashboard widgets
+* 2019-11-15 Fix issues list in Epic: Fix width of status and percentage column.
+* 2019-11-05 Add styling of "Two dimensional filter statistic" gadget
+* 2019-05-08 Styling dashboards left list and widgets spacing. Do not indent <p> in dashboards. Support Jira 8.1.
+* 2019-03-11 Fix epic linked tasks table glitch
+* 2019-02-03 Fix status labels break on epic issues list
+* 2018-12-22 Show linked issues full list always with scrolling in blocks
+* 2018-11-01 Do not wrap assignee in epic tasks list
+* 2018-01-26 Change applying regexp for all domains starting from "jira."
+* 2018-01-19 Firefox compatability fix for gadgets
+  - Drop line-height: 1.4em; for p::first-letter
+  - For gadgets table allign header by center and all cells by middle vertically.
+* 2017-10-18 Allow break long task statuses by full words like "Selected for development"
+* 2017-06-14 Add support of custom text-fields in issue
+* 2017-03-04 Fix main task description edit with issue
+* 2017-02-27 Decrease labels padding for dashboards, smaller issue-list action button, fix issues sub-list line doubling due to the icons
+* 2017-02-17 Fix scrolling and tune some other styles like icons in issues search left navigation list
+* 2017-02-17 Compact also Epic issues list in issue
+* 2017-02-17 Fix height of buttons and menus on issue like "edit", "comment", "assign"…
+* 2017-02-09 Issues sub-list correct percentage column style
+* 2017-02-01 Fix linked issues sub-list always full
+* 2017-01-24 Compact dates in dashboards widgets
+* 2017-01-16 Fix row ordering arrows in one line in sub-tasks list. Compact (v) sign on completed sub-tasks
+* 2016-07-26 Show linked issues full list
+* 2016-07-21 Compact style also pie-chart on dashboard
+* 2016-07-12 Fix issue with time spent/remaining bars in sub-tasks
+* 2016-07-12 In sub-tasks task list arrows for reordering place in one line to decrease height
+* 2016-07-11 Allow wrap labels in td
+* 2016-07-04 Update to fresh Jira styling of dashboards.
+* 2016-06-02 Format editable fields and icons
+* 2016-05-31 Fix sub-tasks list and editing area.
+* 2016-04-15 Fix line height (introduced by previous font size change). Add terms (code, kbd, tt) highlight.
+* 2016-04-14 Change main font to slightly large (x-small -> small) to normal distinguish bold. Fix editable for Jira version 6.4.11
