@@ -1,10 +1,14 @@
 @-moz-document regexp("^https?://jira\\..*"), regexp("^https?://.*/jira/.*") {
+[lang|="en"], body { /* Drop "Droid Sans" which looks ugly */
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Fira Sans,Helvetica Neue,sans-serif;
+}
+
 /********************************************
 ***** Search and Issues
 ********************************************/
 
 /* Reset most paddings and margin */
-p, .issue-body-content .module>.mod-content, .issue-body-content .item-details dl>dd, .property-list>li, .property-list>li, .issuePanelWrapper, .tabwrap>.tabs.horizontal>li, .editable-field, .links-list .link-content, .issue-header .issue-header-content>.aui-page-header, .people-details>dl, .people-details>dl:first-child, .people-details>dl:first-child+dl{
+p, .issue-body-content .module>.mod-content, .issue-body-content .item-details dl>dd, .property-list>li, .property-list>li, .issuePanelWrapper, .tabwrap>.tabs.horizontal>li, .editable-field, .links-list .link-content, .issue-header .issue-header-content>.aui-page-header, .people-details>dl, .people-details>dl:first-child, .people-details>dl:first-child+dl, .issue-body-content .module + .module {
 	padding: 0 !important;
 	margin: 0 !important;
 	font-size: small;
@@ -52,9 +56,6 @@ code, kbd, tt {
 /* Issue status labels */
 .aui-lozenge{
 	padding: 1px 2px;
-}
-td.status .aui-lozenge{
-	/* white-space: nowrap; */
 }
 
 /***************************************/
@@ -224,6 +225,10 @@ div.command-bar{
 	padding: 0;
 }
 
+.aui-toolbar2 .aui-button {
+    margin-top: 1px;
+}
+
 /* Show linked issues full list always with scrolling in blocks */
 .collapsed-link, .collapsed-links-list{
     display: inherit;
@@ -306,12 +311,25 @@ div.command-bar{
 	width: inherit;
 }
 
-.aui-button.aui-button-compact{
+
+.command-bar .aui-button, .command-bar .aui-button:visited, .command-bar a.aui-button {
+    height: 1em;
+    line-height: 1em;
+    padding: 0 10px;
+}
+.ops-menus .aui-toolbar2-inner .icon {
+    vertical-align: top;
+}
+.aui-icon-large::before, .aui-icon-small::before {
+    top: 38%;
+}
+
+.aui-button.aui-button-compact {
 	font-size: 8px;
 	padding: 0 2px;
 	height: 16px;
 }
-.issue_actions .aui-icon-small{
+.issue_actions .aui-icon-small {
 	width: 1px;
 }
 .subtask-reorder .aui-icon-small {
@@ -367,6 +385,7 @@ tr.issuerow>td>div{
 .ghx-issuetable .issue_actions .aui-dd-parent {
 	height: 16px;
 }
+
 /** /end Epic-issues list **/
 
 /*** /end Issue itself ***/
