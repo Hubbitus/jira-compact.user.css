@@ -48,6 +48,7 @@ You may see several enhancments here:
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
+* 2020-09-16 Set backround color for blockquote
 * 2020-09-15 Fix buttons height. Exclude font "Droid Sans" because it looks ugly.
 * 2020-09-11 For fresh JIRA fixes:
   - Compact left issues list in filter.

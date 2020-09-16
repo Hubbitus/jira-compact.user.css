@@ -19,7 +19,7 @@ p {
     text-indent: 1em;
 }
 
-p:first-letter{
+p:first-letter {
 	color: green;
 	/*
 	text-decoration: underline;
@@ -30,12 +30,13 @@ p:first-letter{
 	text-transform: uppercase; /* quirqs */
 }
 
-blockquote{
+blockquote {
 	padding: 0 2px;
 	margin: 0 19px;
+	background-color: aliceblue;
 }
 
-pre{
+pre {
 	margin: 0 1px !important;
 	padding: 0 !important;
 }
