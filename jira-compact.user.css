@@ -864,7 +864,7 @@ span.subnav-container {
 
 .ghx-issue .ghx-extra-fields .ghx-extra-field-row {
 	display: inline;
-	font-size: x-small;
+	font-size: 70%;
 }
 
 .ghx-extra-field::before {
@@ -968,5 +968,89 @@ span.subnav-container {
 /** /Cards **/
 /********************************************
 ***** /Kanban board
+********************************************/
+
+/********************************************
+***** Structure plugin
+********************************************/
+
+/** Header */
+#announcement-banner {
+    padding: 0;
+}
+
+#s-board-toolbar {
+    padding: 1px;
+}
+
+#content > header.s-board-header {
+    min-height: auto;
+}
+
+.structureBorder #structure .head {
+    margin: 0;
+    border-bottom: 1px solid lightgray;
+}
+
+
+/**
+* Structure tables
+*/
+/** Table header */
+.s-pb-container .s-transform, .s-pfb-container .s-pb-banner, .s-pb-container .s-pb-banner, .s-pb-banner .s-btn-group, .s-pb-banner.s-duplicates button > *, .s-pb-banner.s-m-selection button > *, .s-pb-banner .aui-button > span:last-of-type:not(:empty) {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    min-height: auto;
+}
+.s-pb-toolbar {
+    top: 2px;
+}
+
+#structure, #structure input {
+    line-height: inherit;
+}
+
+.s-pb-banner .aui-button i, .s-pb-banner .aui-button span {
+    line-height: 15px;
+}
+.s-pb-container .s-transform, .s-pfb-container .s-pb-banner, .s-pb-container .s-pb-banner, .s-pb-banner .s-btn-group, .s-pb-banner.s-duplicates button > *, .s-pb-banner.s-m-selection button > * {
+    padding: 1px 1px 0 1px;
+}
+.s-ph-right-toolbar .aui-button.aui-button-compact.aui-dropdown2-trigger:not(.aui-dropdown2-trigger-arrowless)::after {
+    top: 8px;
+}
+/** /Table header */
+
+#structure .celldiv {
+    padding: 0;
+}
+
+#structure .td, #structure .tr, #structure .st-dh, #structure .s-handles, #structure .s-handles > .s-fa, #structure .s-ms-mark {
+    height: auto;
+    min-height: auto;
+    padding: 0;
+    line-height: inherit;
+}
+
+/** Action buttons */
+#structure #issuetable .issue_actions .s-actions-column-trigger {
+    height: 14px;
+    margin: -2px 0px 0 -5px;
+    padding: 3px 0;
+    width: 18px;
+}
+#structure .td .alm-more-s {
+    padding-top: 0;
+    /* display: block;  DEBUG only to make visible */
+}
+/** /Action buttons */
+
+/**
+* Structure tables
+*/
+
+/********************************************
+***** Structure plugin
 ********************************************/
 }
