@@ -860,6 +860,7 @@ span.subnav-container {
 }
 .ghx-issue {
 	padding: 0 5px;
+	line-height: 0.9;
 }
 
 .ghx-issue .ghx-extra-fields .ghx-extra-field-row {
@@ -908,6 +909,13 @@ span.subnav-container {
 .ghx-issue .ghx-avatar {
     right: -3px;
     top: 1px;
+}
+
+/** Board: spent time in status */
+.ghx-days {
+	position: absolute;
+	bottom: 1px;
+	right: 1px;
 }
 
 /*** Task icons: type, priority ***/
@@ -1025,13 +1033,16 @@ span.subnav-container {
 #structure .celldiv {
     padding: 0;
 }
-
 #structure .td, #structure .tr, #structure .st-dh, #structure .s-handles, #structure .s-handles > .s-fa, #structure .s-ms-mark {
-    height: auto;
+    height: 1.3em; /* Can't use "auto" - drag controls dissapeared */
     min-height: auto;
     padding: 0;
     line-height: inherit;
 }
+.s-ms-mark {
+	margin: 0;
+}
+
 
 /** Action buttons */
 #structure #issuetable .issue_actions .s-actions-column-trigger {
