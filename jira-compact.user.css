@@ -1057,8 +1057,18 @@ span.subnav-container {
 }
 /** /Action buttons */
 
+/* table grouping row */
+#structure .tr.s-sema-group {
+	background-color: #f7f7f7;
+}
+/** Selected row */
+/*#structure .st-focused .tr.s-focused, #structure .st-details-focused .tr.s-focused {
+	background-color: #EAF1FD;
+}
+*/
+
 /**
-* Structure tables
+* /Structure tables
 */
 
 /********************************************
