@@ -48,6 +48,7 @@ You may see several enhancments here:
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
+* 2021-07-26 Decrease board column gaps
 * 2020-10-29 In structure highlight grouping rows
 * 2020-10-26 Fix structure plugin table row control dissapearance. More compact card in board by "Spent in status"
 * 2020-10-20 Add Structure plgugin table compact styling.

@@ -50,7 +50,7 @@ code, kbd, tt {
 }
 
 /* Filter name header */
-.saved-search-selector{
+.saved-search-selector {
 	padding: 0;
 }
 
@@ -387,6 +387,40 @@ tr.issuerow>td>div{
 	height: 16px;
 }
 
+.ghx-issuetable img {
+	width: 12px;
+}
+
+.ghx-issuetable .issue_actions .aui-dd-parent {
+	height: 12px;
+	width: 26px;
+}
+
+.ghx-issuetable .ghx-accept {
+	padding: 0 13px 0 0;
+}
+
+.ghx-issuetable .ghx-summary {
+	width: auto;
+}
+
+tr.issuerow > td > div {
+    min-height: 12px;
+}
+
+.ghx-issuetable .issue_actions a.icon-tools-small {
+	background-size: 14px;
+}
+.ghx-issuetable .issue_actions a.aui-dd-link span {
+	background-position: 3px 4px;
+}
+.ghx-issuetable .issue_actions a.aui-dd-link {
+	padding: 0 0 0 13px;
+}
+
+.ghx-issuetable .status {
+	width: auto;
+}
 /** /end Epic-issues list **/
 
 /*** /end Issue itself ***/
@@ -457,7 +491,7 @@ ul.labels li .lozenge{
 	display: none;
 }
 
-/********************************************
+/*******************************************
 ***** Dasboard
 ********************************************/
 /* Main */
@@ -769,6 +803,16 @@ table.aui > tbody > tr > th, table.aui > tbody > tr > td{
 ********************************************/
 
 /********************************************
+***** Dropdown menu items
+********************************************/
+.aui-dropdown2 [role="checkbox"], .aui-dropdown2 [role="menuitem"], .aui-dropdown2 [role="menuitemcheckbox"], .aui-dropdown2 [role="menuitemradio"], .aui-dropdown2 [role="radio"], .aui-dropdown2 a {
+	padding: 0 5px;
+}
+/********************************************
+***** /Dropdown menu items
+********************************************/
+
+/********************************************
 ***** Footer
 ********************************************/
 .aui-theme-default #content{
@@ -803,6 +847,10 @@ footer .footer-body ul:nth-child(2n){ /* Strange empty div 'licensemessage' */
 	line-height: 0.9;
 }
 
+.ghx-rapid-views #gh #ghx-work #ghx-pool-column .ghx-columns, .ghx-rapid-views #gh #ghx-work #ghx-pool-column #ghx-column-headers, .ghx-rapid-views #gh #ghx-work #ghx-pool-column .ghx-zone-overlay-table {
+	grid-column-gap: 2px !important;
+}
+
 /** Header **/
 /** Filters **/
 span.subnav-container {
@@ -821,18 +869,21 @@ span.subnav-container {
 .ghx-controls-filters dd a {
 	padding: 0 1px;
 	text-decoration: underline;
-	background-color: lightsteelblue;
+	background-color: #dfe9f7ad;
 }
 .ghx-has-avatar .ghx-issue-fields, .ghx-has-corner .ghx-issue-fields {
-    padding-right: 30px;
+    padding-right: 30px !important;
 }
 .ghx-issue, .ghx-sprint-support .ghx-issue {
 	box-shadow: 0 0 7px 0 rgba(0,0,0,0.5);
 }
+#js-work-quickfilters {
+	min-height: 20px;
+}
 /** /Filters **/
 
-.ghx-column-headers .ghx-column {
-	padding: 0;
+.ghx-column-headers .ghx-column, #ghx-operations {
+	padding: 0 !important;
 }
 .ghx-rapid-views #gh #ghx-work #ghx-pool-column .ghx-swimlane .ghx-swimlane-header {
 	top: 0;
@@ -1030,11 +1081,8 @@ span.subnav-container {
 }
 /** /Table header */
 
-#structure .celldiv {
-    padding: 0;
-}
-#structure .td, #structure .tr, #structure .st-dh, #structure .s-handles, #structure .s-handles > .s-fa, #structure .s-ms-mark {
-    height: 1.3em; /* Can't use "auto" - drag controls dissapeared */
+#structure .celldiv, #structure .td, #structure .tr, #structure .st-dh, #structure .s-handles, #structure .s-handles > .s-fa, #structure .s-ms-mark {
+    height: 1.27em; /* Can't use "auto" - drag controls dissapeared */
     min-height: auto;
     padding: 0;
     line-height: inherit;
@@ -1042,7 +1090,9 @@ span.subnav-container {
 .s-ms-mark {
 	margin: 0;
 }
-
+.tr.hrowf .st-dh, .st-focused .s-focused .st-dh {
+    background-position: 0px -2px;
+}
 
 /** Action buttons */
 #structure #issuetable .issue_actions .s-actions-column-trigger {
@@ -1070,6 +1120,11 @@ span.subnav-container {
 /**
 * /Structure tables
 */
+
+/* EPAM support annoyed icon */
+#support-button {
+	display: none;
+}
 
 /********************************************
 ***** Structure plugin
