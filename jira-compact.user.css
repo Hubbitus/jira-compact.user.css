@@ -1,7 +1,7 @@
 /* ==UserStyle==
-@name           Jira compact theme. For jira versions 6.1-8.19.1+
+@name           Jira compact theme. For jira versions 6.1 - 8.19.1+
 @namespace      hubbitus.info
-@version        2.2.1
+@version        2.3
 @description    A new userstyle
 @author         Pavel Alexeev <Pahan@Hubbitus.info>
 ==/UserStyle== */
@@ -19,7 +19,7 @@ body {
 /********************************************
 ***** Search and Issues
 ********************************************/
-		
+
 /* Reset most paddings and margin */
 p, .issue-body-content .module>.mod-content, .issue-body-content .item-details dl>dd, .property-list>li, .property-list>li, .issuePanelWrapper, .tabwrap>.tabs.horizontal>li, .editable-field, .links-list .link-content, .issue-header .issue-header-content>.aui-page-header, .people-details>dl, .people-details>dl:first-child, .people-details>dl:first-child+dl, .issue-body-content .module + .module {
 	padding: 0 !important;
@@ -72,6 +72,9 @@ code, kbd, tt {
 	padding: 1px 2px;
 }
 
+.jira-editor-container {
+	width: 100%;
+}
 /***************************************/
 /*** Compact left search list sidebar **/
 /***************************************/
