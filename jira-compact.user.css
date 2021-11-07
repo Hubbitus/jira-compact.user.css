@@ -856,7 +856,7 @@ footer .footer-body ul:nth-child(2n) { /* Strange empty div 'licensemessage' */
 }
 
 /** Header **/
-/** Filters **/
+/** Quick filters **/
 span.subnav-container {
 	display: inline-block;
 }
@@ -865,15 +865,21 @@ span.subnav-container {
 }
 
 #ghx-operations {
-	padding: 0 2px;
+	padding: 0 2px !important;
 }
 .ghx-controls-filters dt, .ghx-controls-filters dd {
-	margin: 0;
+	margin: 0 !important;
 }
 .ghx-controls-filters dd a {
-	padding: 0 1px;
-	text-decoration: underline;
-	background-color: #dfe9f7ad;
+	padding: 0 1px !important;
+	text-decoration: underline !important;
+	background-color: #dfe9f7ad !important;
+	height: auto;
+	line-height: 0.8 !important;
+}
+.ghx-controls-filters dd a.ghx-active, .ghx-controls-filters dd .js-quickfilter-button.ghx-active {
+	color: #1f7e8c;
+	font-weight: bold;
 }
 .ghx-has-avatar .ghx-issue-fields, .ghx-has-corner .ghx-issue-fields {
 	padding-right: 30px !important;
@@ -884,7 +890,7 @@ span.subnav-container {
 #js-work-quickfilters {
 	min-height: 20px;
 }
-/** /Filters **/
+/** /Quick filters **/
 
 .ghx-column-headers .ghx-column, #ghx-operations {
 	padding: 0 !important;
