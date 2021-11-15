@@ -48,6 +48,7 @@ You may see several enhancments here:
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
+* 2021-11-15 Fix main header dropdown menu icons heigh
 * 2021-11-08 Fix kanban board quick filters style new Jira 8.19.1
 * 2021-11-07 Fix visual editor width for new Jira 8.19.1
 * 2021-07-26 Decrease board column gaps
