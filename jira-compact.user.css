@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Jira compact theme. For jira versions 6.1 - 8.19.1+
 @namespace      hubbitus.info
-@version        2.3
+@version        2.4
 @description    A new userstyle
 @author         Pavel Alexeev <Pahan@Hubbitus.info>
 ==/UserStyle== */
@@ -197,7 +197,7 @@
 	/* #details-module { - That is all details of Issue including: "Custom description", "Test Case", "Epic link" +
 	#issuedetails include only base common fields like: Type, Priority, Status…
 	*/
-	#details-module {
+	.issue-main-column #details-module {
 		padding-left: 0.3em !important;
 		position: absolute;
 		right: 4px;
@@ -205,6 +205,23 @@
 		max-height: 10.1em;
 		overflow: auto;
 	}
+	/* Dashboard right sidebar task view */
+	.ghx-detail-view.gh-editable-detail-view .ghx-detail-section.module .mod-content .property-list .wrap .name {
+		margin-left: 0;
+		width: auto;
+	}
+	#DETAILS > div {
+		margin: 1px !important;
+		border: 1px dotted grey;
+		border-radius: 6px;
+		box-shadow: 1px 3px 2px #1a9cb0;
+	}
+	.ghx-detail-view.gh-editable-detail-view .ghx-detail-issue .module.toggle-wrap .toggle-title {
+		background-color: transparent;
+	}
+	/* /Dashboard right sidebar task view */
+
+
 	/* Hide "Custom description" label */
 	#rowForcustomfield_10800 div strong {
 		display: none;
@@ -247,9 +264,10 @@
 
 	/*** Issue itself ***/
 	#summary-val.editable-field {
-		font-size: 20pt;
+		font-size: 16pt;
 		color: green;
 		width: 100%;
+		text-shadow: 1px 1px 3px #116ebf;
 	}
 
 	.property-list .item .value, .status-view {
