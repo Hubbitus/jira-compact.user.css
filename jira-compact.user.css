@@ -1165,6 +1165,9 @@
 	}
 	*/
 
+	#structure .s-user-field { /** Structure assignee field */
+		margin-top: 1px !important;
+	}
 	/**
 	* /Structure tables
 	*/

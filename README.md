@@ -48,6 +48,7 @@ You may see several enhancments here:
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
+* 2021-12-13 Fix margin for the assignee field in the structure table
 * 2021-12-02 Style issue header with shadow. Fix dashboard isseu sidebar details overlay
 * 2021-11-15 Fix main header dropdown menu icons heigh
 * 2021-11-08 Fix kanban board quick filters style new Jira 8.19.1
