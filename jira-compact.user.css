@@ -190,7 +190,7 @@
 	/* Description block at right and do not wider than content, but not edit form */
 	#description-val {
 	/*	float: right; // It do smaller with on small test content, but it also break editor */
-		color: brown;
+		/* color: brown; */
 		width: 100%;
 	}
 
