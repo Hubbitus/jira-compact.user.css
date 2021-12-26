@@ -388,10 +388,9 @@
 
 	td.stsequence div {
 		display: block;
-		width: 0.7em;
 		background-image: none !important;
 	}
-
+/*??
 	td.stsequence div:after {
 		content: "✓";
 		width: 0.7em;
@@ -399,7 +398,7 @@
 		position: relative;
 		font-weight: bold;
 	}
-
+*/
 	tr.issuerow>td>div {
 		min-height: 14px; /* To hold full done icon */
 	}
@@ -1002,7 +1001,7 @@
 	}
 	.ghx-issue-fields .ghx-summary {
 		font-weight: bold;
-		font-size: small;
+		font-size: x-small;
 	}
 
 	.ghx-issue .ghx-avatar {
@@ -1035,6 +1034,7 @@
 	}
 	.ghx-issue .ghx-key-link {
 		line-height: 1.2;
+		font-size: x-small;
 	}
 	/*** /Task icons: type, priority ***/
 
