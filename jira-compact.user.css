@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name           Jira compact theme. For jira versions 6.1 - 8.19.1+
 @namespace      hubbitus.info
-@version        2.4
-@description    A new userstyle
+@version        2.5
+@description    Compact most things of JIRA for more rationale use it. For example to see tens (most) issues on a kanban board instead 2-3 by default. Mostly usefull for the big displays (and not for the mobile devices!).
 @author         Pavel Alexeev <Pahan@Hubbitus.info>
 ==/UserStyle== */
 
@@ -887,9 +887,32 @@
 	}
 
 	/** Header **/
+	#ghx-header .aui-button {
+		height: auto !important;
+		padding: 0 2px;
+		line-height: 1em;
+	}
+
+	span.subnav-page-header {
+		padding: 0;
+		font-weight: bold;
+		font-size: 17px;
+	}
+	#ghx-modes-tools { /* Board top-right dropdown menu */
+		padding: 0;
+	}
+	#ghx-header h1, #ghx-header h2 {
+		line-height: 1;
+		font-size: 13px;
+		font-style: italic;
+	}
 	/** Quick filters **/
+	.ghx-controls-filters #js-plan-quickfilters, .ghx-controls-filters #js-work-quickfilters {
+		padding: 0 3px 3px 3px;
+	}
 	span.subnav-container {
 		display: inline-block;
+		height: auto;
 	}
 	#ghx-header {
 		padding: 0;
@@ -959,11 +982,12 @@
 	.ghx-issue {
 		padding: 0 5px;
 		line-height: 0.9;
+		margin: 3px;
 	}
 
 	.ghx-issue .ghx-extra-fields .ghx-extra-field-row {
 		display: inline;
-		font-size: 70%;
+		font-size: 57%;
 	}
 
 	.ghx-extra-field::before {
@@ -999,15 +1023,38 @@
 	.ghx-issue .ghx-extra-fields {
 		margin: 0;
 	}
-	.ghx-issue-fields .ghx-summary {
+	.ghx-issue-fields .ghx-summary, .ghx-parent-stub .ghx-summary {
 		font-weight: bold;
 		font-size: x-small;
+		padding: 0;
+		word-wrap: break-word;
+		white-space: normal;
+		overflow: auto;
 	}
 
 	.ghx-issue .ghx-avatar {
 		right: -3px;
 		top: 1px;
 	}
+
+	/** Board:Cards:Sub-tasks */
+	.ghx-parent-group.ghx-away {
+		margin: 2px;
+	}
+	.ghx-parent-stub {
+		padding: 0;
+	}
+	.ghx-parent-stub .ghx-group {
+		padding: 0;
+		height: auto;
+	}
+	.ghx-parent-stub .ghx-key {
+		padding: 0 4px 0 4px;
+	}
+	.ghx-issue-subtask {
+		margin: 0 2px;
+	}
+	/** /Board:Cards:Sub-tasks */
 
 	/** Board: spent time in status */
 	.ghx-days {
@@ -1017,19 +1064,22 @@
 	}
 
 	/*** Task icons: type, priority ***/
+	:root {
+		--board-card-icons--top: 17px;
+	}
 	.ghx-issue .ghx-type {
 		position: absolute;
-		top: 20px;
+		top: var(--board-card-icons--top);
 		left: 9px;
 	}
 	.ghx-issue .ghx-type img, .ghx-priority img {
-		width: 14px !important;
-		height: 14px !important;
+		width: 12px !important;
+		height: 12px !important;
 		overflow: auto;
 	}
 	.ghx-issue .ghx-flags {
 		position: absolute;
-		top: 20px;
+		top: var(--board-card-icons--top);
 		left: 25px;
 	}
 	.ghx-issue .ghx-key-link {

@@ -48,6 +48,7 @@ You may see several enhancments here:
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
+* 2021-12-27 Style kanban board header and sub-tasks - show full task name, reduce spaces
 * 2021-12-26:
   - Made board issue titles smaller (x-small).
   - Disable brawn color for the task descriptions.
