@@ -262,7 +262,9 @@
 	}
 	/*** end "Details move to right" **/
 
-	/*** Issue itself ***/
+	/***************************************/
+	/***          Issue itself            **/
+	/***************************************/
 	#summary-val.editable-field {
 		font-size: 16pt;
 		color: green;
@@ -463,7 +465,15 @@
 	}
 	/** /end Epic-issues list **/
 
-	/*** /end Issue itself ***/
+	/** Issue tables **/
+	table td.confluenceTd, table td.confluenceTd p {
+		font-size: xx-small;
+	}
+	/** /Issue tables **/
+
+	/***************************************/
+	/***          /Issue itself           **/
+	/***************************************/
 
 	/*** Comments **/
 	.tabwrap>.tabs.horizontal>li {
@@ -897,6 +907,7 @@
 		padding: 0;
 		font-weight: bold;
 		font-size: 17px;
+		float: left;
 	}
 	#ghx-modes-tools { /* Board top-right dropdown menu */
 		padding: 0;
@@ -923,6 +934,7 @@
 	}
 	.ghx-controls-filters dt, .ghx-controls-filters dd {
 		margin: 0 !important;
+		line-height: 1.1;
 	}
 	.ghx-controls-filters dd a {
 		padding: 0 1px !important;
