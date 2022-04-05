@@ -6,7 +6,7 @@
 @author         Pavel Alexeev <Pahan@Hubbitus.info>
 ==/UserStyle== */
 
-@-moz-document regexp("^https?://jira\\..*"), regexp("^https?://.*/jira/.*") {
+@-moz-document regexp("^https?://jira[\\d\\w]*\\..*"), regexp("^https?://.*/jira/.*") {
 
 	[lang|="en"], body { /* Drop "Droid Sans" which looks ugly */
 		font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Fira Sans,Helvetica Neue,sans-serif;
@@ -374,14 +374,12 @@
 		height: 16px;
 	}
 	.issue_actions .aui-icon-small {
-		width: 1px;
+		width: 14px;
+		margin-left: -2px;
 	}
 	.subtask-reorder .aui-icon-small {
 		height: 15px;
 		width: 15px;
-	}
-	.issue-actions-trigger .aui-icon:before { /* Vertical centering */
-		margin-top: -9px;
 	}
 
 	#issuetable .streorder, .issue-table .streorder {
@@ -510,9 +508,10 @@
 		font-size: x-small;
 	}
 
-	.actionContainer br:last-child {
+/*	.actionContainer br:last-child {
 		display: none;
 	}
+*/
 
 	/*** Labels ***/
 	ul.labels {
@@ -1065,6 +1064,9 @@
 	}
 	.ghx-issue-subtask {
 		margin: 0 2px;
+	}
+	.ghx-issue ~ .ghx-subtask-group {
+		margin: -3px 5px 0 5px;
 	}
 	/** /Board:Cards:Sub-tasks */
 
