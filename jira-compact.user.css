@@ -6,7 +6,7 @@
 @author         Pavel Alexeev <Pahan@Hubbitus.info>
 ==/UserStyle== */
 
-@-moz-document regexp("^https?://jira[\\d\\w]*\\..*"), regexp("^https?://.*/jira/.*") {
+@-moz-document regexp("^https?://jira[\\d\\w]*\\..*"), regexp("^https?://((?!scriptrunner\\.adaptavist\\.com).)*/jira/.*") {
 
 	[lang|="en"], body { /* Drop "Droid Sans" which looks ugly */
 		font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Fira Sans,Helvetica Neue,sans-serif;
@@ -422,6 +422,7 @@
 	.ghx-issuetable td {
 		line-height: 1;
 		padding: 0;
+		vertical-align: middle;
 	}
 	.ghx-issuetable .issue_actions .aui-dd-parent {
 		height: 16px;
@@ -460,6 +461,10 @@
 
 	.ghx-issuetable .status {
 		width: auto;
+	}
+
+	.ghx-issuetable .ghx-accept {
+		background-size: 12px;
 	}
 	/** /end Epic-issues list **/
 
