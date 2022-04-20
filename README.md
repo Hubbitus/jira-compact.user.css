@@ -48,6 +48,7 @@ You may see several enhancments here:
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
+* 2022-04-20 In EPIC issues list decrease resolution icon
 * 2022-04-05 Fix issues table list actions buton appearance (by hover)
 * 2022-01-11 Board more compact - decrease font, board headers join two lines.
 * 2021-12-27 Style kanban board header and sub-tasks - show full task name, reduce spaces
