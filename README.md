@@ -48,6 +48,7 @@ You may see several enhancments here:
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
+* 2023-01-26 Add avanced roadmap styling, re-made style of structure table
 * 2022-04-20 In EPIC issues list decrease resolution icon
 * 2022-04-05 Fix issues table list actions buton appearance (by hover)
 * 2022-01-11 Board more compact - decrease font, board headers join two lines.
