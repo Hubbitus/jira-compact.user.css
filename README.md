@@ -64,13 +64,13 @@ Work distributed under terms of [CC BY - Creative Commons Attribution](http://cr
 * 2021-07-26 Decrease board column gaps
 * 2020-10-29 In structure highlight grouping rows
 * 2020-10-26 Fix structure plugin table row control dissapearance. More compact card in board by "Spent in status"
-* 2020-10-20 Add Structure plgugin table compact styling.
+* 2020-10-20 Add Structure plugin table compact styling.
 * 2020-09-16 Set backround color for blockquote
 * 2020-09-15 Fix buttons height. Exclude font "Droid Sans" because it looks ugly.
 * 2020-09-11 For fresh JIRA fixes:
   - Compact left issues list in filter.
-  - Fix project administration pabe headers
-  - Issue "details" heder move right to details itself.
+  - Fix project administration page headers
+  - Issue "details" header move right to details itself.
 * 2020-03-06 Fix Kanban board avatar placement for very short tasks summary (with little height of card)
 * 2020-03-04 Compact issue tables Status and Epic columns, fix list artifacts in top-right corner menu (like "Help", "Administration")
 * 2020-03-02 Compact Kanban board
