@@ -333,6 +333,16 @@
 	}
 	/** Editable fields **/
 
+    /* Special highlight custom field "Block reason" */
+    strong[title='Block reason'], strong[title='Block reason'] + div{
+        border: 1px solid magenta;
+        background-color: #ff00006b;
+    }
+    strong[title='Block reason'] + div{
+        background-color: #ff000024;
+    }
+    /* /Special highlight custom field "Block reason" */
+
 	#status-val, #resolution-val, #fixfor-val, #customfield_10040-val {
 		background-color: gold;
 	}
@@ -364,7 +374,6 @@
 	#issuetable .status {
 		width: inherit;
 	}
-
 
 	.command-bar .aui-button, .command-bar .aui-button:visited, .command-bar a.aui-button {
 		height: 1em;
