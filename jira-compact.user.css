@@ -27,13 +27,13 @@
 		height: 15px;
 		width: 15px;
 	}
-    nav.aui-header {
-        height: 33px;
-    }
-    
-    #quicksearch-menu {
-        margin-top: -8px;
-    }
+	nav.aui-header {
+		height: 33px;
+	}
+
+	#quicksearch-menu {
+		margin-top: -8px;
+	}
 	/** /Top menu header **/
 
 	/********************************************
@@ -1170,6 +1170,10 @@
 	***** Structure plugin
 	********************************************/
     /******* MINIMAL compactness, without line height change **/
+    .structureBorder #structure .head {
+        margin: 0 20px !important;
+    }
+
     #structure .celldiv {
         white-space: normal;
         line-height: 15px;
@@ -1273,9 +1277,8 @@
         padding-right: 18px !important;
     }
     /** /Quick filters and transformation buttons **/
-    
     /****** /MINIMAL compactness, without line height change **/
-    
+
     /* DISABLE Structure styling because Gantt structure plagin use canvas for drawing and that is not styled correctly!!! TODO
     HACK with media by https://stackoverflow.com/questions/8459988/css-nested-comments/8460194#8460194) */
     @media DISABLED {
