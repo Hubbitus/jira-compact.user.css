@@ -1170,9 +1170,11 @@
 	***** Structure plugin
 	********************************************/
     /******* MINIMAL compactness, without line height change **/
+    /* Break layout when Gantt chart used as right panel.
     .structureBorder #structure .head {
         margin: 0 20px !important;
     }
+    */
 
     #structure .celldiv {
         white-space: normal;
@@ -1199,9 +1201,12 @@
         display: inline-block;
         align-items:center;
     }
-    /*#structure .tableHeader .st-hc-faded, #structure .p1panel .td[col="handle"] {
-        width: 45px;
-    }*/
+    #structure .st-dh {
+        padding: 2px 0;
+    }
+    #structure .s-handles > .alm {
+        margin-left: -7px;
+    }
     #structure .tr .celldiv.s-main[style*="padding-left:12px"]{
         padding-left: 0 !important;
     }
@@ -1231,37 +1236,134 @@
         padding: 0;
     }
 
-    .celldiv.offset.s-main[style*="padding-left:44px"] { /* 1st level nesting */
+	/** Main column tree paddings **/
+	/* All with 2 variants with space and without because differently present in table and in dragging and there is not Regexp support in CSS for attribute selectors unfortunately :( */
+    .celldiv.offset.s-main[style*="padding-left:44px"], .celldiv.offset.s-main[style*="padding-left: 44px"] { /* 1st level nesting */
         padding-left: 16px !important;
     }
-    .celldiv.offset.s-main[style*="padding-left:76px"] { /* 2nd level nesting */
+    .celldiv.offset.s-main[style*="padding-left:76px"], .celldiv.offset.s-main[style*="padding-left: 76px"] { /* 2nd level nesting */
         padding-left: 32px !important;
     }
-    .celldiv.offset.s-main[style*="padding-left:108px"] { /* 3rd level nesting */
+    .celldiv.offset.s-main[style*="padding-left:108px"], .celldiv.offset.s-main[style*="padding-left: 108px"] { /* 3rd level nesting */
         padding-left: 48px !important;
     }
-    .celldiv.offset.s-main[style*="padding-left:140px"] { /* 4th level nesting */
+    .celldiv.offset.s-main[style*="padding-left:140px"], .celldiv.offset.s-main[style*="padding-left: 140px"] { /* 4th level nesting */
         padding-left: 64px !important;
     }
-    .celldiv.offset.s-main[style*="padding-left:172px"] { /* 5th level nesting */
+    .celldiv.offset.s-main[style*="padding-left:172px"], .celldiv.offset.s-main[style*="padding-left: 172px"] { /* 5th level nesting */
         padding-left: 80px !important;
     }
-    .celldiv.offset.s-main[style*="padding-left:204px"] { /* 6th level nesting */
+    .celldiv.offset.s-main[style*="padding-left:204px"], .celldiv.offset.s-main[style*="padding-left: 204px"] { /* 6th level nesting */
         padding-left: 96px !important;
     }
-    .celldiv.offset.s-main[style*="padding-left:236px"] { /* 7th level nesting */
+    .celldiv.offset.s-main[style*="padding-left:236px"], .celldiv.offset.s-main[style*="padding-left: 236px"] { /* 7th level nesting */
         padding-left: 112px !important;
     }
-    .celldiv.offset.s-main[style*="padding-left:268px"] { /* 8th level nesting */
+    .celldiv.offset.s-main[style*="padding-left:268px"], .celldiv.offset.s-main[style*="padding-left: 268px"] { /* 8th level nesting */
         padding-left: 128px !important;
     }
-    .celldiv.offset.s-main[style*="padding-left:300px"] { /* 9th level nesting */
+    .celldiv.offset.s-main[style*="padding-left:300px"], .celldiv.offset.s-main[style*="padding-left: 300px"] { /* 9th level nesting */
         padding-left: 144px !important;
     }
-    .celldiv.offset.s-main[style*="padding-left:332px"] { /* 10th level nesting */
+    .celldiv.offset.s-main[style*="padding-left:332px"], .celldiv.offset.s-main[style*="padding-left:332px"] { /* 10th level nesting */
         padding-left: 160px !important;
     }
-    
+	/** /Main column tree paddings **/
+
+    /** Decrease first left column of structure table **/
+/*    #structure .tableHeader .st-hc-faded */
+	#structure .p1panel .td[col="handle"], #structure .th[col="handle"]
+	{
+        width: 50px !important;
+    }
+	#structure .tableHeader .st-hc-faded { /* Always show header 1st column icons, not only on hower */
+		display: block !important;
+	}
+
+	#structure .tableHeader .s-th-handle
+	,#structure .tableHeader .th
+	{
+        transform: scale(1.02, 1) translate(-20px,0) !important;
+/*		border: 1px solid red; box-sizing: border-box;*/
+	}
+	#structure .tableHeader .th-ctls .th-ctl
+	{
+        transform: scale(1.02, 1) translate(-20px,0) !important;
+/*		border: 1px solid green; box-sizing: border-box;
+		display: none;*/
+	}
+	#structure .tableHeader .th-ctls .s-resizer
+	{
+        transform: scale(1.02, 1) translate(-20px,0) !important;
+/*		border: 1px solid magenta; box-sizing: border-box;
+		display: none;*/
+	}
+	
+
+	#structure .tableHeader .col-pin {
+		vertical-align: middle !important;
+	}
+	#structure .tableHeader div.th-ccnf-asz {
+		transform: translate(-30px,0) !important;
+	}
+
+	#structure .th-ctl-hi .celldiv {
+		padding: 0;
+	}
+
+	/* Unfortunately neither :nth-match() or :nth-chld(* of ...) does not supported by modern browsers yet:
+	1) https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child
+	2) https://stackoverflow.com/questions/21167159/css-nth-match-doesnt-work
+	So, there is only one way to hardcode indexes and offsets */
+/*	#structure .tableHeader .th-ctls .s-resizer:nth-child(12) {
+		transform: translate(-20px,0) !important;
+	}
+	#structure .tableHeader .th-ctls .th-ctl:nth-child(1){
+		transform: translate(-20px,0) !important;
+	}
+	#structure .tableHeader .th-ctls .s-resizer:nth-child(13) {
+		transform: translate(-20px,0) !important;
+	}
+	#structure .tableHeader .th-ctls .th-ctl:nth-child(2){
+		transform: translate(-19px,0) !important;
+	}
+	#structure .tableHeader .th-ctls .s-resizer:nth-child(14) {
+		transform: translate(-20px,0) !important;
+	}
+	#structure .tableHeader .th-ctls .th-ctl:nth-child(3){
+		transform: translate(-18px,0) !important;
+	}
+	#structure .tableHeader .th-ctls .s-resizer:nth-child(15) {
+		transform: translate(-18px,0) !important;
+	}
+	#structure .tableHeader .th-ctls .th-ctl:nth-child(4){
+		transform: translate(-17px,0) !important;
+		border: 1px solid red; box-sizing: border-box;
+	}
+	#structure .tableHeader .th-ctls .s-resizer:nth-child(16) {
+		transform: translate(-16px,0) !important;
+		border: 1px solid magenta; box-sizing: border-box;
+	}
+	#structure .tableHeader .th-ctls .th-ctl:nth-child(5){
+		transform: translate(-19px,0) !important;
+		border: 1px solid green; box-sizing: border-box;		
+	}
+	#structure .tableHeader .th-ctls .s-resizer:nth-child(17) {
+		transform: translate(-19px,0) !important;
+	}
+*/
+/*
+	#structure .tableHeader .th-ctls .s-resizer:nth-of-type(1) { /* DEBUG * /
+		border: 1px solid red;
+		box-sizing: border-box;
+	}
+*/
+    /** /Decrease first left column of structure table **/
+
+	#structure .st-section.s-h-need-right.hangover { /* Right actions column */
+		width: 15px;
+	}
+
     /** Quick filters and transformation buttons **/
     .s-ph-transforms li:not(.s-qf-dropdown-action) {
         margin: 1px;
