@@ -281,6 +281,10 @@
 		text-shadow: 1px 1px 3px #116ebf;
 	}
 
+	.twixi-block .twixi, .toggle-wrap .twixi, .twixi-block .icon-twixi, .toggle-wrap .icon-twixi, .twixi-block .twixi-opened, .toggle-wrap .twixi-opened, .twixi-block .twixi-closed, .toggle-wrap .twixi-closed {
+		left: 8px;
+	}
+
 	.property-list .item .value, .status-view {
 		padding: 0;
 	}
