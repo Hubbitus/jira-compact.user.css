@@ -1174,7 +1174,7 @@
 	***** Structure plugin
 	********************************************/
 	/******* MINIMAL compactness, without line height change **/
-	/* Break layout when Gantt chart used as right panel.
+	/* Breaks layout when Gantt chart used as right panel.
 	.structureBorder #structure .head {
 		margin: 0 20px !important;
 	}
@@ -1238,7 +1238,7 @@
 	}
 
 	#structure .panelContent {
-		padding: 0;
+		padding: 2px 2px;
 	}
 
 	/** Main column tree paddings **/
@@ -1383,6 +1383,22 @@
 		padding-right: 18px !important;
 	}
 	/** /Quick filters and transformation buttons **/
+	/*
+	#structure .celldiv .panel[style*="border-style: dashed"] .panelContent p {
+		color: lightgreen !important; / * TODO * /
+		mix-blend-mode: color !important;
+	}
+	*/
+
+	/* Structure panels inside table */
+	#structure .panel, #structure .panelHeader, #structure .panelContent {
+		padding: 0 !important;
+		margin: 0 !important;
+		font-size: xx-small !important;
+		line-height: 0.6 !important;
+		border: 0 !important;
+	}
+	/* /Structure panels inside table */
 	/****** /MINIMAL compactness, without line height change **/
 
 	/* DISABLE Structure styling because Gantt structure plagin use canvas for drawing and that is not styled correctly!!! TODO
