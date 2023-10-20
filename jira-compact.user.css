@@ -68,7 +68,15 @@
 		padding: 0 2px;
 		margin: 0 19px;
 		background-color: aliceblue;
+		border: 2px solid var(--aui-border);
+		border-left: 5px solid var(--aui-border);
 	}
+	blockquote::before {
+      content: "❞";
+      font-size: 19pt;
+      float: left;
+      line-height: 0.8;
+    }
 
 	pre {
 		margin: 0 1px !important;
@@ -1391,7 +1399,9 @@
 	*/
 
 	/* Structure panels inside table */
-	#structure .panel, #structure .panelHeader, #structure .panelContent {
+	#structure .panel
+	, #structure .panelHeader, #structure .panelContent
+	, #structure .panelHeader p, #structure .panelContent p {
 		padding: 0 !important;
 		margin: 0 !important;
 		font-size: xx-small !important;

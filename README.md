@@ -48,6 +48,7 @@ You may see several enhancments here:
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
+* 2023-10-20 Format blockquote in comments
 * 2023-09-20 Format panel inside structure table
 * 2023-05-18 Fix borders and headers in structure table
 * 2023-03-26 Fix textarea folding icon appearance (was hidden)
