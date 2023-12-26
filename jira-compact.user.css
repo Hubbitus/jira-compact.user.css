@@ -1,5 +1,5 @@
 /* ==UserStyle==
-@name           Jira compact theme. For jira versions 6.1 - 8.19.1+
+@name           Jira compact theme. For jira versions 6.1 - 9.4+
 @namespace      hubbitus.info
 @version        2.5
 @description    Compact most things of JIRA for more rationale use it. For example to see tens (most) issues on a kanban board instead 2-3 by default. Mostly usefull for the big displays (and not for the mobile devices!).
@@ -1039,7 +1039,7 @@
 	}
 
 	.ghx-extra-field::before {
-		content: "⸨" attr(data-tooltip) "⸩";
+		content: "⸨" attr(data-tooltip) attr(title) "⸩";
 		border: 2px dotted lightblue;
 		border-radius: 6px;
 		margin-right: 2px;
