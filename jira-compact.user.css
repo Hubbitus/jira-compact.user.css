@@ -1,5 +1,5 @@
 /* ==UserStyle==
-@name           Jira compact theme. For jira versions 6.1 - 9.4+
+@name           Jira compact theme. For jira versions 6.1 - 8.19.1+
 @namespace      hubbitus.info
 @version        2.5
 @description    Compact most things of JIRA for more rationale use it. For example to see tens (most) issues on a kanban board instead 2-3 by default. Mostly usefull for the big displays (and not for the mobile devices!).
@@ -314,7 +314,7 @@
 	}
 	.links-list dd:hover .delete-link a, .links-list dd .delete-link a:focus {
 		top: 0 !important;
-		right: 1px; /* Fix to do not appear horiaontal scrolling*/
+		right: 1px; /* Fix to do not appear horisontal scrolling*/
 	}
 	/* /Show linked issues full list always */
 
@@ -504,6 +504,13 @@
 		font-size: xx-small;
 	}
 	/** /Issue tables **/
+
+	.toggle-header .aui-toggle-header-button-label, .twixi-block .aui-button.toggle-title, .toggle-wrap .aui-button.toggle-title {
+		z-index: 1; /* Fix for jira version 9.12.1. Issue blocks titles visibility */
+	}
+	.command-bar .aui-button, .command-bar .aui-button:visited, .command-bar a.aui-button {
+		line-height: 0.8em;
+	}
 
 	/***************************************/
 	/***          /Issue itself           **/

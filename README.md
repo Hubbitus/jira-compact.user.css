@@ -48,6 +48,7 @@ You may see several enhancments here:
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
+* 2024-01-12 Updates for JIRA 9.12 - fix issue blocks titles visibility with icons
 * 2023-12-26 Support JIRA 9.4 in board - add title in cards visualization
 * 2023-10-20 Format blockquote in comments
 * 2023-09-20 Format panel inside structure table
