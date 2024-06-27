@@ -601,33 +601,36 @@
 		padding: 0 0 0 50px;
 	}
 
-	#dashboard>.vertical.tabs {
+	/***** COLUMNS *****/
+	/* !!!Note, JS handled, window resize required in development to see effect of width and placements! */
+	#dashboard-content ul.column {
+		padding: 0 0 0 0.1%;
 		margin: 0;
-		padding: 0;
-		width: 130px;
+		/* outline: 1px solid green !important; */
 	}
-
-	#dashboard-content .gadget {
-		width: 31.9% !important;
+	/** 3 columns layout aaa (111) **/
+	#dashboard-content .layout-aaa ul.column {
+		width: 33.2%;
 	}
-
-	/* 2 columns with different width layout. Unfortunately no other than anchor to colors classes way found to wtyle that */
-	#dashboard-content .layout-ba ~ .gadget.color5, #dashboard-content .layout-ba ~ .gadget.color6, #dashboard-content .layout-ba ~ .gadget.color7 {
-		width: 64% !important;
-		padding-left: 66px;
+	/** /3 columns layout **/
+	/** 2 column layout aa (11) **/
+	#dashboard-content .layout-aa ul.column {
+		width: 49.8% !important;
 	}
+	/** /2 column layout aa **/
 
-
-	/*?? 3 columns .layout-aaa
-	#dashboard>.vertical.tabs {
-			width: 130px;
+	/** 2 column layout ab (21) **/
+	#dashboard-content .layout-ab ul.column {
+		width: 49.8% !important;
 	}
-	*/
-
-	#dashboard>.vertical.tabs+#dashboard-content {
-		margin-left: 85px;
-		margin-right: -4px;
+	#dashboard-content .layout-ab ul.column.first {
+		width: 66.4%;
 	}
+	#dashboard-content .layout-ab ul.column.second {
+		width: 33.3%;
+	}
+	/** /2 column layout ab (21) **/
+	/***** /COLUMNS *****/
 
 	#dashboard-content .gadget.maximized {
 		width: 96% !important;
@@ -688,11 +691,13 @@
 	}
 
 	/** Compact most TD and th **/
-	#issuetable>thead>tr>th, .issue-table>thead>tr>th, #issuetable>tbody>tr>th, .issue-table>tbody>tr>th, #issuetable>thead>tr>td, .issue-table>thead>tr>td, #issuetable>tbody>tr>td, .issue-table>tbody>tr>td, #issuetable>tfoot>tr>td, .issue-table>tfoot>tr>td,
-	table.aui>thead>tr>th, table.aui>tbody>tr>th, table.aui>thead>tr>td, table.aui>tbody>tr>td, table.aui>tfoot>tr>td, .two-d-container table.aui thead th, .two-d-container table.aui tbody tr:last-child td.totals, .two-d-container table.aui th, .two-d-container table.aui td, .two-d-container .table-container .extra-container {
+	/* Filter table: */ #issuetable>thead>tr>th, .issue-table>thead>tr>th, #issuetable>tbody>tr>th, .issue-table>tbody>tr>th, #issuetable>thead>tr>td, .issue-table>thead>tr>td, #issuetable>tbody>tr>td, .issue-table>tbody>tr>td, #issuetable>tfoot>tr>td, .issue-table>tfoot>tr>td,
+	table.aui>thead>tr>th, table.aui>tbody>tr>th, table.aui>thead>tr>td, table.aui>tbody>tr>td, table.aui>tfoot>tr>td, .two-d-container table.aui thead th, .two-d-container table.aui tbody tr:last-child td.totals, .two-d-container table.aui th, .two-d-container table.aui td, .two-d-container .table-container .extra-container,
+	/* Rich filter table: */ .qrf-table-results-gadget .issue-table.qrf-issue-table > thead, .qrf-table-results-gadget .issue-table.qrf-issue-table > tbody, .qrf-table-results-gadget .issue-table.qrf-issue-table > tfoot, .qrf-table-results-gadget .issue-table.qrf-issue-table > thead > tr, .qrf-table-results-gadget .issue-table.qrf-issue-table > tbody > tr, .qrf-table-results-gadget .issue-table.qrf-issue-table > tfoot > tr, .qrf-table-results-gadget .issue-table.qrf-issue-table > thead > tr > td, .qrf-table-results-gadget .issue-table.qrf-issue-table > tbody > tr > td, .qrf-table-results-gadget .issue-table.qrf-issue-table > tfoot > tr > td, .qrf-table-results-gadget .issue-table.qrf-issue-table > thead > tr > th, .qrf-table-results-gadget .issue-table.qrf-issue-table > tbody > tr > th, .qrf-table-results-gadget .issue-table.qrf-issue-table > tfoot > tr > th
+	{
 		padding: 0 !important; /* !important required for firefox */
 		margin: 0;
-		border: 1px solid #cccccc4d;
+		border: 1px solid #cccccc4d !important;
 		vertical-align: middle;
 	}
 
@@ -849,22 +854,30 @@
 		margin: 0;
 	}
 
-	/* Dashboard left dashboard list make compact and with bullets */
+	/* Dashboard left tabs list make compact and with bullets */
 	.dashboard-tabs .aui-nav {
 		width: 100%;
 	}
 	.dashboard-tabs.vertical .aui-nav, .dashboard-tabs.vertical .aui-nav > li {
 		padding: 0 0 0 1em;
-		list-style-type: disclosure-closed;
+		margin-left: -0.3em;
+		list-style-type: circle;
+		display: revert;
 	}
 	.aui-nav-vertical > li > a, .aui-navgroup-vertical .aui-nav > li > a {
 		/* position: relative; -- BREAK Admin! ??? */
-		left: -1em;
-		padding: 1px 0;
+		padding: 4px 0;
+		margin: 0 0 0 -20px
 	}
-	#dashboard > .vertical.tabs + #dashboard-content {
-		margin-left: 130px;
+	.aui-nav-vertical .aui-nav .aui-nav-selected, .aui-navgroup-vertical .aui-nav .aui-nav-selected{
+		background-color: transparent;
 	}
+	.aui-nav-vertical .aui-nav .aui-nav-selected a, .aui-navgroup-vertical .aui-nav .aui-nav-selected a{
+		background-color: var(--aui-item-selected-bg);
+	  	color: var(--aui-item-selected-text);
+	  	font-weight: 500;
+	}
+	/* /Dashboard left dashboard list make compact and with bullets */
 
 	/* Two dimensional filter statistic */
 	.two-d-container table.aui .default_image.default_image_component { /* hide icons in header */
@@ -1189,11 +1202,52 @@
 	***** Structure plugin
 	********************************************/
 	/******* MINIMAL compactness, without line height change **/
-	/* Breaks layout when Gantt chart used as right panel.
+	/* Breaks layout when Gantt chart used as right panel. OR should be adjusted with .s-g-panel-header*/
 	.structureBorder #structure .head {
 		margin: 0 20px !important;
 	}
-	*/
+	.aui-toolbar2 .aui-button, .s-g-react-button, .aui-toolbar2 .s-g-react-button span,
+	.s-g-panel-header .aui-button, .s-g-react-button, .s-g-panel-header .s-g-react-button span,
+	#s-board-toolbar {
+		padding: 0 !important;
+		height: auto !important;
+		line-height: normal !important;
+		vertical-align: super;
+	}
+	#s-board-toolbar {
+		padding: 0;
+	}
+	#content > header.s-board-header {
+		min-height: auto;
+		height: 0;
+	}
+	.s-full-screen-mode #content > header.s-board-header {
+		min-height: 22px;
+	}
+	.s-g-panel-header {
+		height: auto;
+		position: absolute;
+		z-index: 1;
+		top: 55px;
+		right: 0;
+	}
+	.s-gantt {
+		top: 9px;
+	}
+	.s-pb-container .s-pb-banner:not(.s-description-banner) {
+		padding: 4px 17px !important;
+	}
+	.s-g-transformations-banner-container {
+		top: 46px;
+	}
+	.s-pfb-container .s-pb-banner { /* bottom status line of table */
+		padding: 0px 0 0 0;
+	}
+	.s-pb-toolbar { /* bottom status line of table - ritght close X */
+		right: 10px;
+		top: 6px;
+	}
+	/* ---------------------- */
 
 	#structure .celldiv {
 		white-space: normal;
@@ -1417,203 +1471,6 @@
 	}
 	/* /Structure panels inside table */
 	/****** /MINIMAL compactness, without line height change **/
-
-	/* DISABLE Structure styling because Gantt structure plagin use canvas for drawing and that is not styled correctly!!! TODO
-	HACK with media by https://stackoverflow.com/questions/8459988/css-nested-comments/8460194#8460194) */
-	@media DISABLED {
-	#structure {
-		--tr-height: 13px !important;
-	}
-	#structure {
-		--th-ccnf-action-width: 25px !important;
-		--th-ccnf-action-margin: 0px !important;
-		--th-ccnf-action-icon-size: 2px !important;
-	}
-
-	/** Header */
-	#announcement-banner {
-		padding: 0;
-	}
-
-	#s-board-toolbar {
-		padding: 1px;
-	}
-
-	#content > header.s-board-header {
-		min-height: auto;
-	}
-
-	.structureBorder #structure .head {
-		margin: 0;
-		border-bottom: 1px solid lightgray;
-	}
-
-	#content > header.s-board-header {
-		min-height: auto;
-	}
-
-	.s-g-panel-header {
-		height: 11px !important;
-	}
-
-	#s-board-toolbar .aui-toolbar2-secondary { /* Structure buttons share, export */
-		float: left;
-		margin-left: 0;
-	}
-
-	/**
-	* Structure tables
-	*/
-	/** Table header */
-	.s-pb-container .s-transform, .s-pfb-container .s-pb-banner, .s-pb-container .s-pb-banner, .s-pb-banner .s-btn-group, .s-pb-banner.s-duplicates button > *, .s-pb-banner.s-m-selection button > *, .s-pb-banner .aui-button > span:last-of-type:not(:empty) {
-		padding: 0;
-		margin: 0;
-		height: auto;
-		min-height: auto;
-	}
-	.s-pb-toolbar {
-		top: 2px;
-	}
-
-	#structure .tr:not(.s-wrapping) .celldiv:not([class*="customfield"]) .value * { /* All lines fonts */
-		font-size: 12px;
-	}
-
-	#structure .tr:not(.s-wrapping) .celldiv:not([class*="customfield"]) .value .s-summary-icon {
-		font-size: 11px;
-	}
-	#structure .tableHeader .th .celldiv, #structure .th-ctl-hi .celldiv {
-		padding: 0 !important;
-	}
-/* Самая левая колонка таблицы. TODO сделать то же для заголовка
-	#structure .p1panel .td[col="handle"]{
-		width: 25px;
-	}
-*/
-	.tr .st-dh.s-adjusted, .tr.hrowf .st-dh.s-adjusted, .st-focused .s-focused .st-dh.s-adjusted { /* Handle to move line */
-		background-position: -111px -7px;
-	}
-
-	.celldiv.offset.s-main[style*="padding-left:44px"] { /* 1st level nesting */
-		padding-left: 24px !important;
-	}
-	.celldiv.offset.s-main[style*="padding-left:76px"] { /* 2nd level nesting */
-		padding-left: 37px !important;
-	}
-	.celldiv.offset.s-main[style*="padding-left:108px"] { /* 3rd level nesting */
-		padding-left: 50px !important;
-	}
-	.celldiv.offset.s-main[style*="padding-left:140px"] { /* 4th level nesting */
-		padding-left: 63px !important;
-	}
-	.celldiv.offset.s-main[style*="padding-left:172px"] { /* 5th level nesting */
-		padding-left: 76px !important;
-	}
-	.celldiv.offset.s-main[style*="padding-left:204px"] { /* 6th level nesting */
-		padding-left: 89px !important;
-	}
-	.celldiv.offset.s-main[style*="padding-left:236px"] { /* 7th level nesting */
-		padding-left: 102px !important;
-	}
-	.celldiv.offset.s-main[style*="padding-left:268px"] { /* 8th level nesting */
-		padding-left: 115px !important;
-	}
-	.celldiv.offset.s-main[style*="padding-left:300px"] { /* 9th level nesting */
-		padding-left: 128px !important;
-	}
-	.celldiv.offset.s-main[style*="padding-left:332px"] { /* 10th level nesting */
-		padding-left: 141px !important;
-	}
-	div.tr[style*="margin-top: 33px"]{ /* On dragging line - place where drop suggested! */
-		margin-top: 13px !important;
-	}
-
-	#structure, #structure input {
-		line-height: inherit;
-	}
-
-	.s-pb-banner .aui-button i, .s-pb-banner .aui-button span {
-		line-height: 15px;
-	}
-	.s-pb-container .s-transform, .s-pfb-container .s-pb-banner, .s-pb-container .s-pb-banner, .s-pb-banner .s-btn-group, .s-pb-banner.s-duplicates button > *, .s-pb-banner.s-m-selection button > * {
-		padding: 1px 1px 0 1px;
-	}
-	.s-ph-right-toolbar .aui-button.aui-button-compact.aui-dropdown2-trigger:not(.aui-dropdown2-trigger-arrowless)::after {
-		top: 8px;
-	}
-	/** /Table header */
-
-	#structure .s-expander::before { /* Line expand ^> symbols*/
-		width: 2px;
-		margin-left: -24px;
-	}
-
-	div.td[col=main] div.celldiv span.value {
-		margin-left: -9px;
-	}
-	div.issueArea img {
-		max-width: 13px;
-		max-height: 13px;
-		padding: 0px 0px 3px 1px !important
-	}
-
-	#structure .s-summary-icon, #structure .s-service-desk-icon {
-		margin: 0;
-	}
-
-	#structure .celldiv, #structure .td, #structure .tr, #structure .st-dh, #structure .s-handles, #structure .s-handles > .s-fa, #structure .s-ms-mark {
-		height: 1.0em; /* Can't use "auto" - drag controls dissapeared */
-		min-height: auto;
-		padding: 0;
-		line-height: inherit;
-	}
-	.s-ms-mark {
-		margin: 0;
-		background-position: 0 -2px;
-	}
-	.tr.hrowf .st-dh, .st-focused .s-focused .st-dh {
-		background-position: 0px -2px;
-	}
-
-	#structure .tr .celldiv .value .s-user-field .aui-avatar {
-		margin-right: 0;
-	}
-
-	/** Action buttons */
-	#structure #issuetable .issue_actions .s-actions-column-trigger {
-		height: 14px;
-		margin: -2px 0px 0 -5px;
-		padding: 3px 0;
-		width: 18px;
-	}
-	#structure .td .alm-more-s {
-		padding-top: 0;
-		/* display: block; DEBUG only to make visible */
-	}
-	/** /Action buttons */
-
-	/* table grouping row */
-	#structure .tr.s-sema-group {
-		background-color: #f7f7f7;
-	}
-	/** Selected row */
-	/*#structure .st-focused .tr.s-focused, #structure .st-details-focused .tr.s-focused {
-		background-color: #EAF1FD;
-	}
-	*/
-
-	#structure .s-user-field { /** Structure assignee field */
-		margin-top: 1px !important;
-	}
-
-	.s-summary-icon > img {
-		padding: 0 0 4px 0;
-	}
-	/** /Structure tables */
-	/********************************************
-	***** /Structure plugin
-	********************************************/
-	}
 
 	/********************************************
 	***** Advanced roadmap
