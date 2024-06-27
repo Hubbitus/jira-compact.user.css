@@ -864,7 +864,7 @@
 		list-style-type: circle;
 		display: revert;
 	}
-	.aui-nav-vertical > li > a, .aui-navgroup-vertical .aui-nav > li > a {
+	.dashboard-tabs .aui-nav-vertical > li > a, .dashboard-tabs .aui-navgroup-vertical .aui-nav > li > a {
 		/* position: relative; -- BREAK Admin! ??? */
 		padding: 4px 0;
 		margin: 0 0 0 -20px
