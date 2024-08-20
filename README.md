@@ -48,6 +48,7 @@ You may see several enhancments here:
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
+* 2024-08-20 Add global defaults to img, ul, ol, dl.
 * 2024-06-27 Fix list styling on widgets add list
 * 2024-06-27 Style 3 types of dashbord layouts. Fix left tabs menu on dashboards. Cleanup.
 * 2024-01-12 Updates for JIRA 9.12 - fix issue blocks titles visibility with icons

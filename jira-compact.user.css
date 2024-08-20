@@ -15,6 +15,14 @@
 		line-height: 1;
 	}
 
+	img {
+		border-radius: 5px 5px;
+	}
+
+	ul, ol, dl {
+		padding: 0;
+	}
+
 	/** Top menu header **/
 	.aui-dropdown2 .aui-icon-container {
 		padding-left: 25px;
@@ -1261,7 +1269,7 @@
 	#structure .celldiv .value, #structure .celldiv .value * {
 		white-space: revert;
 		max-height: var(--tr-height);
-		overflow: hidden;
+/*		overflow: hidden;*/ /* Break avatar in structure grid - cuted at top */
 		word-break: break-all;
 	}
 	#structure .tr .celldiv { /* Vertical align: middle. By https://stackoverflow.com/questions/18649106/vertical-align-middle-in-div/18649137#18649137 */
