@@ -19,8 +19,11 @@
 		border-radius: 5px 5px;
 	}
 
-	ul, ol, dl {
+	dl {
 		padding: 0;
+	}
+	ul, ol {
+		padding: 0 0 0 2em;
 	}
 
 	/** Top menu header **/
