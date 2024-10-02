@@ -339,6 +339,7 @@
 		width: 16px;
 	}
 	.editable-field {
+		display: flex;
 		min-height: 16px;
 	}
 	.editable-field .overlay-icon.aui-iconfont-edit:before {
@@ -523,6 +524,14 @@
 		line-height: 0.8em;
 	}
 
+	/** "Component/s" pair fix line break "**/
+	.property-list .wrap {
+		display: inline-flex;
+	}
+	span#components-val {
+		display: block ruby;
+	}
+	/** /"Component/s" pair fix line break "**/
 	/***************************************/
 	/***          /Issue itself           **/
 	/***************************************/
@@ -1537,4 +1546,7 @@
 	/********************************************
 	***** /Advanced roadmap
 	********************************************/
+
+	/** Experiments **/
+
 }

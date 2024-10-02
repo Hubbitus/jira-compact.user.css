@@ -48,6 +48,7 @@ You may see several enhancments here:
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
+* 2024-10-03 "Component/s" pair fix line break
 * 2024-08-21 ol, ul defaults. To fix plugin overrides.
 * 2024-08-20 Add global defaults to img, ul, ol, dl.
 * 2024-06-27 Fix list styling on widgets add list
