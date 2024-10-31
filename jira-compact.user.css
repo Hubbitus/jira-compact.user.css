@@ -527,10 +527,23 @@
 	/** "Component/s" pair fix line break "**/
 	.property-list .wrap {
 		display: inline-flex;
+		width: 95%;
+	}
+	#customfieldmodule .property-list .wrap { /* Full-text fields like description and "Итоговый результат" */
+		display: grid;
 	}
 	span#components-val {
 		display: block ruby;
 	}
+	.labels-wrap { /* Fix scrolling appearance in block of issue details (fields Resolution, fix Version/s...)*/
+		display: inline-block !important;
+		width: 100%;
+	}
+	/*
+	#wrap-labels.wrap {
+		display: grid;
+	}
+	*/
 	/** /"Component/s" pair fix line break "**/
 	/***************************************/
 	/***          /Issue itself           **/
@@ -1324,6 +1337,10 @@
 		width: 16px;
 		margin: 0;
 		overflow: clip;
+	}
+
+	#structure .resizeIndicator { /* Resizer column line */
+		margin-left: -22px;
 	}
 
 	#structure .panelContent {
