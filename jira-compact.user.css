@@ -992,6 +992,18 @@
 		line-height: 1em;
 	}
 
+	#ghx-column-headers {
+		min-height: auto;
+	}
+	.jxls-export-dropdown-trigger {
+		padding: 0;
+		margin: 0;
+		font-size: 10px !important;
+	}
+	#ghx-column-headers .ghx-column {
+		min-height: 20px;
+	}
+
 	span.subnav-page-header {
 		padding: 0;
 		font-weight: bold;
@@ -1260,9 +1272,13 @@
 	.s-g-panel-header {
 		height: auto;
 		position: absolute;
-		z-index: 1;
+		z-index: 100;
 		top: 55px;
 		right: 0;
+		padding: 4px;
+	}
+	.s-g-panel-header .aui-button {
+		margin: 0;
 	}
 	.s-gantt {
 		top: 9px;

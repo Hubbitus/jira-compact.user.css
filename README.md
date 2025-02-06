@@ -48,6 +48,7 @@ You may see several enhancments here:
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
+* 2025-02-06 Fix board header with xlsx export plugin enabled
 * 2024-10-31 Fix structure column resizer line eppearance disconnection with header marker
 * 2024-10-03 "Component/s" pair fix line break
 * 2024-08-21 ol, ul defaults. To fix plugin overrides.
