@@ -82,12 +82,15 @@
 		border: 2px solid var(--aui-border);
 		border-left: 5px solid var(--aui-border);
 	}
-	blockquote::before {
+	blockquote::before, blockquote::after {
       content: "❞";
       font-size: 19pt;
       float: left;
       line-height: 0.8;
     }
+	blockquote::after {
+		float: right;
+	}
 
 	pre {
 		margin: 0 1px !important;
