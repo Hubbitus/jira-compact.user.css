@@ -1285,6 +1285,7 @@
 	}
 	.s-gantt {
 		top: 9px;
+		height: 100%;
 	}
 	.s-pb-container .s-pb-banner:not(.s-description-banner) {
 		padding: 4px 17px !important;
