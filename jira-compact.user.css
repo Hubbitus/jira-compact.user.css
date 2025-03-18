@@ -460,7 +460,7 @@
 	}
 
 	.issuerow .assignee {
-		white-space: nowrap;
+		white-space: nowrap !important;
 	}
 	/** /end Sub-tasks task list **/
 
@@ -1360,7 +1360,7 @@
 	}
 
 	#structure .resizeIndicator { /* Resizer column line */
-		margin-left: -22px;
+		margin-left: -38px;
 	}
 
 	#structure .panelContent {
@@ -1412,18 +1412,17 @@
 
 	#structure .tableHeader .s-th-handle
 	,#structure .tableHeader .th {
-		transform: scale(1.01, 1) translate(-20px,0) !important;
+		transform: scale(1.01, 1) translate(-38px,0) !important;
 /*		border: 1px solid red; box-sizing: border-box;*/
 	}
 	#structure .tableHeader .th-ctls .th-ctl {
-		transform: scale(1.01, 1) translate(-20px,0) !important;
-/*		border: 1px solid green; box-sizing: border-box;
-		display: none;*/
+		transform: scale(1.01, 1) translate(-38px,0) !important;
+/*		border: 1px solid green; box-sizing: border-box;*/
 	}
 	#structure .tableHeader .th-ctls .s-resizer {
-		transform: scale(1.01, 1) translate(-20px,0) !important;
+		transform: scale(1.01, 1) translate(-38px,0) !important;
 /*		border: 1px solid magenta; box-sizing: border-box;
-		display: none;*/
+		*/
 	}
 	#structure .s-issue-cover {
 		transform: translate(-20px,0) !important;
@@ -1584,6 +1583,21 @@
 	***** /Advanced roadmap
 	********************************************/
 
-	/** Experiments **/
+	/*******************************************
+	***** Tempo
+	********************************************/
+	div[data-testid='tempo-navigation-header']{
+		height: 41px;
+	}
+/*
+	.fixedDataTableRowLayout_rowWrapper, .fixedDataTableRowLayout_main, .fixedDataTableCellGroupLayout_cellGroupWrapper, .fixedDataTableCellGroupLayout_cellGroup, .tempo-timesheet-fixed-cell, .fixedDataTableCellLayout_wrap1, .fixedDataTableCellLayout_wrap2, .fixedDataTableCellLayout_wrap3, .public_fixedDataTableCell_cellContent, .tempo-day-header {
+		height: 20px !important;
+		min-height: 20px !important;
+	}
+*/
+	/*******************************************
+	***** /Tempo
+	********************************************/
 
+	/** Experiments **/
 }
