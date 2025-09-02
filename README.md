@@ -48,6 +48,7 @@ You may see several enhancments here:
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
+* 2025-09-02 Structure table: allow statuses to bereak lines
 * 2025-03-18 Fix structure columns width and resizer line placement
 * 2025-02-19 Set height 100% for the structure gantt canvas
 * 2025-02-17 Style blockquote::after

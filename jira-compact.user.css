@@ -1359,16 +1359,12 @@
 		overflow: clip;
 	}
 
-	#structure .resizeIndicator { /* Resizer column line */
-		margin-left: -38px;
-	}
-
 	#structure .panelContent {
 		padding: 2px 2px;
 	}
 
 	/** Main column tree paddings **/
-	/* All with 2 variants with space and without because differently present in table and in dragging and there is not Regexp support in CSS for attribute selectors unfortunately :( */
+	/* All with 2 variants with space and without because differently present in table and in dragging and there is no Regexp support in CSS for attribute selectors unfortunately :( */
 	.celldiv.offset.s-main[style*="padding-left:44px"], .celldiv.offset.s-main[style*="padding-left: 44px"] { /* 1st level nesting */
 		padding-left: 16px !important;
 	}
@@ -1410,24 +1406,31 @@
 		display: block !important;
 	}
 
+	:root {
+  		--struct-header-shift-left: -21px;
+		--struct-header-transform: scale(1.01, 1) translate(var(--struct-header-shift-left),0) !important;
+	}
+
 	#structure .tableHeader .s-th-handle
 	,#structure .tableHeader .th {
-		transform: scale(1.01, 1) translate(-38px,0) !important;
+		transform: var(--struct-header-transform);
 /*		border: 1px solid red; box-sizing: border-box;*/
 	}
 	#structure .tableHeader .th-ctls .th-ctl {
-		transform: scale(1.01, 1) translate(-38px,0) !important;
+		transform: var(--struct-header-transform);
 /*		border: 1px solid green; box-sizing: border-box;*/
 	}
 	#structure .tableHeader .th-ctls .s-resizer {
-		transform: scale(1.01, 1) translate(-38px,0) !important;
-/*		border: 1px solid magenta; box-sizing: border-box;
-		*/
+		transform: var(--struct-header-transform);
+/*		border: 1px solid magenta; box-sizing: border-box;*/
 	}
 	#structure .s-issue-cover {
 		transform: translate(-20px,0) !important;
 	}
 
+	#structure .resizeIndicator { /* Resizer column line on column width change */
+		margin-left: var(--struct-header-shift-left);
+	}
 
 	#structure .tableHeader .col-pin {
 		vertical-align: middle !important;
@@ -1526,6 +1529,13 @@
 		border: 0 !important;
 	}
 	/* /Structure panels inside table */
+
+
+	/** Allow statuses to bereak lines */
+	#structure .tr:not(.s-wrapping) .celldiv:not([class*="customfield"]) .value span.aui-lozenge {
+		block-size: auto;
+	}
+
 	/****** /MINIMAL compactness, without line height change **/
 
 	/********************************************
@@ -1600,4 +1610,5 @@
 	********************************************/
 
 	/** Experiments **/
+
 }
