@@ -1324,8 +1324,8 @@
 		align-items:center;
 	}
 	#structure .tr .celldiv .value {
-		display: inline-block;
-		align-items:center;
+		display: contents;
+		align-items: center;
 	}
 	#structure .st-dh {
 		padding: 2px 0;
@@ -1534,6 +1534,7 @@
 	/** Allow statuses to bereak lines */
 	#structure .tr:not(.s-wrapping) .celldiv:not([class*="customfield"]) .value span.aui-lozenge {
 		block-size: auto;
+		margin: 0 auto; /* center horizontally */
 	}
 
 	/****** /MINIMAL compactness, without line height change **/
