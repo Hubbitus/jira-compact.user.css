@@ -7,7 +7,7 @@ Any feedback welcome!
 For Chrome/Chromium browswers I use it in nice [Stylish](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=ru) extension.
 I have not tested, but should work in [Firefox Stylish](https://addons.mozilla.org/ru/firefox/addon/stylish/) variant too (please let me known if it is not true).
 
-You may install it from [userstyles.org site](https://userstyles.org/styles/112544/jira-6-1-compact-theme) or [new one userstyles.world](https://userstyles.world/style/429/jira-compact-theme-for-jira-versions-6-1-8-19-1) in that case updates will be propogated automatically or.
+You may install it from [userstyles.org site](https://userstyles.org/styles/112544/jira-6-1-compact-theme) or [new one userstyles.world](https://userstyles.world/style/429/jira-compact-theme-for-jira-versions-6-1-8-19-1) in that case updates will be propagated automatically.
 
 Alternatively: Just click button "Create style" and copy/paste content of file https://raw.githubusercontent.com/Hubbitus/jira-compact.user.css/master/jira-compact.user.css.
 
@@ -48,6 +48,7 @@ You may see several enhancments here:
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
+* 2025-11-06 Center filter results table th ans status column
 * 2025-09-02 Structure table: allow statuses to bereak lines
 * 2025-03-18 Fix structure columns width and resizer line placement
 * 2025-02-19 Set height 100% for the structure gantt canvas
