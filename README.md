@@ -4,7 +4,7 @@ Css styles to compact jira (>=6.1) representation (now support up to version 8.1
 Any feedback welcome!
 
 ## How to use
-For Chrome/Chromium browswers I use it in nice [Stylish](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=ru) extension.
+For Chrome/Chromium browsers I use it in nice [Stylish](https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=ru) extension.
 I have not tested, but should work in [Firefox Stylish](https://addons.mozilla.org/ru/firefox/addon/stylish/) variant too (please let me known if it is not true).
 
 You may install it from [userstyles.org site](https://userstyles.org/styles/112544/jira-6-1-compact-theme) or [new one userstyles.world](https://userstyles.world/style/429/jira-compact-theme-for-jira-versions-6-1-8-19-1) in that case updates will be propagated automatically.
@@ -26,7 +26,7 @@ As it style 100 words have worth less than example looks (for simplicity and eas
 ![Original jira 3 column dashboard](screenshots/Dashboard-aaa-Original.png)
 ![Compacted jira 3 column dashboard](screenshots/Dashboard-aaa-Compact.png)
 
-Please note - **even more rows and columns in widgets tables - scrolling dissapeared**.
+Please note - **even more rows and columns in widgets tables - scrolling disappeared**.
 
 2) Jira 2 column dashboard (ba layout):
 ![Original jira 2 column (second wide) dashboard](screenshots/Dashboard-ba-Original.png)
@@ -38,28 +38,29 @@ Please note - **even more rows and columns in widgets tables - scrolling dissape
 ![List of issues original look](screenshots/List-of-issues-Original.png)
 ![List of issues compact view](screenshots/List-of-issues-Compact.png)
 
-You may see several enhancments here:
+You may see several enhancements here:
 * Issue details from center moved to right. So, you start read from problem, meta information also at top right.
 * Left list do not truncate issue summary at half of word - instead multiline used.
-* If you use [Threaded comments plugin](https://marketplace.atlassian.com/plugins/com.atlassian.jira.threadedcomments.threaded-comments) there are also few changes - compactnesss, highlight odd lines and fir like/dislike bug appearence as a bonus.
+* If you use [Threaded comments plugin](https://marketplace.atlassian.com/plugins/com.atlassian.jira.threadedcomments.threaded-comments) there are also few changes - compactness, highlight odd lines and fir like/dislike bug appearance as a bonus.
 ![threaded comments](screenshots/Comments-thread.png)
 
 ## Licensing
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
+* 2026-10-20 Add initial styling compaction of the Smart Checklist
 * 2025-11-06 Center filter results table th ans status column
-* 2025-09-02 Structure table: allow statuses to bereak lines
+* 2025-09-02 Structure table: allow statuses to break lines
 * 2025-03-18 Fix structure columns width and resizer line placement
-* 2025-02-19 Set height 100% for the structure gantt canvas
+* 2025-02-19 Set height 100% for the structure Gantt canvas
 * 2025-02-17 Style blockquote::after
 * 2025-02-06 Fix board header with xlsx export plugin enabled
-* 2024-10-31 Fix structure column resizer line eppearance disconnection with header marker
+* 2024-10-31 Fix structure column resizer line appearance disconnection with header marker
 * 2024-10-03 "Component/s" pair fix line break
 * 2024-08-21 ol, ul defaults. To fix plugin overrides.
 * 2024-08-20 Add global defaults to img, ul, ol, dl.
 * 2024-06-27 Fix list styling on widgets add list
-* 2024-06-27 Style 3 types of dashbord layouts. Fix left tabs menu on dashboards. Cleanup.
+* 2024-06-27 Style 3 types of dashboard layouts. Fix left tabs menu on dashboards. Cleanup.
 * 2024-01-12 Updates for JIRA 9.12 - fix issue blocks titles visibility with icons
 * 2023-12-26 Support JIRA 9.4 in board - add title in cards visualization
 * 2023-10-20 Format blockquote in comments
@@ -69,24 +70,24 @@ Work distributed under terms of [CC BY - Creative Commons Attribution](http://cr
 * 2023-03-19 Fix structure dragging rows paddings.
 * 2023-02-17 Decrease height of structure header
 * 2023-01-28 Special highlight custom field "Block reason"
-* 2023-01-26 Add avanced roadmap styling, re-made style of structure table
+* 2023-01-26 Add advanced roadmap styling, re-made style of structure table
 * 2022-04-20 In EPIC issues list decrease resolution icon
-* 2022-04-05 Fix issues table list actions buton appearance (by hover)
+* 2022-04-05 Fix issues table list actions button appearance (by hover)
 * 2022-01-11 Board more compact - decrease font, board headers join two lines.
 * 2021-12-27 Style kanban board header and sub-tasks - show full task name, reduce spaces
 * 2021-12-26:
   - Made board issue titles smaller (x-small).
   - Disable brawn color for the task descriptions.
 * 2021-12-13 Fix margin for the assignee field in the structure table
-* 2021-12-02 Style issue header with shadow. Fix dashboard isseu sidebar details overlay
+* 2021-12-02 Style issue header with shadow. Fix dashboard issue sidebar details overlay
 * 2021-11-15 Fix main header dropdown menu icons heigh
 * 2021-11-08 Fix kanban board quick filters style new Jira 8.19.1
 * 2021-11-07 Fix visual editor width for new Jira 8.19.1
 * 2021-07-26 Decrease board column gaps
 * 2020-10-29 In structure highlight grouping rows
-* 2020-10-26 Fix structure plugin table row control dissapearance. More compact card in board by "Spent in status"
+* 2020-10-26 Fix structure plugin table row control disappearance. More compact card in board by "Spent in status"
 * 2020-10-20 Add Structure plugin table compact styling.
-* 2020-09-16 Set backround color for blockquote
+* 2020-09-16 Set background color for blockquote
 * 2020-09-15 Fix buttons height. Exclude font "Droid Sans" because it looks ugly.
 * 2020-09-11 For fresh JIRA fixes:
   - Compact left issues list in filter.
@@ -104,9 +105,9 @@ Work distributed under terms of [CC BY - Creative Commons Attribution](http://cr
 * 2018-12-22 Show linked issues full list always with scrolling in blocks
 * 2018-11-01 Do not wrap assignee in epic tasks list
 * 2018-01-26 Change applying regexp for all domains starting from "jira."
-* 2018-01-19 Firefox compatability fix for gadgets
+* 2018-01-19 Firefox compatibility fix for gadgets
   - Drop line-height: 1.4em; for p::first-letter
-  - For gadgets table allign header by center and all cells by middle vertically.
+  - For gadgets table align header by center and all cells by middle vertically.
 * 2017-10-18 Allow break long task statuses by full words like "Selected for development"
 * 2017-06-14 Add support of custom text-fields in issue
 * 2017-03-04 Fix main task description edit with issue

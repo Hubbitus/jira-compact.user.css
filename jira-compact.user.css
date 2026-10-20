@@ -548,6 +548,31 @@
 	}
 	*/
 	/** /"Component/s" pair fix line break "**/
+
+    /** Checklist **/
+    #checklist-app h1, #checklist-app h2, #checklist-app h3, #checklist-app h4, #checklist-app h5, #checklist-app h6 {
+        margin: 0;
+    }
+    html[data-theme~="spacing:spacing"], .enUzDn {
+        --ds-space-025: 0;
+        --ds-space-050: 0;
+        --ds-space-100: 0.1rem;
+        --negate-container-padding: -4px !important;
+    }
+    #checklist-app div {
+        line-height: 1 !important;
+    }
+    #checklist-app label[data-testid*="-checkbox--checkbox-label"] svg {
+        height: 16px;
+    }
+    #checklist-app label[data-testid*="-checkbox--checkbox-label"] {
+        width: 17px;
+    }
+    #checklist-app div[data-testid*="Checklist-item-"] button[data-visibility="on-row-hover"] {
+        height: 19px;
+        width: 15px;
+    }
+    /** /Checklist **/
 	/***************************************/
 	/***          /Issue itself           **/
 	/***************************************/
@@ -1325,8 +1350,9 @@
 		align-items:center;
 	}
 	#structure .tr .celldiv .value {
-		display: contents;
-		align-items: center;
+		display: inline-block;
+		align-items: center; /* imortant for vertical centering issue type icon on multi-line items!*/
+        margin: 0 auto; /* centering badges of status and components in cell horizontally */
 	}
 	#structure .st-dh {
 		padding: 2px 0;
