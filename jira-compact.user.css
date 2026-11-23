@@ -1,7 +1,7 @@
 /* ==UserStyle==
-@name           Jira compact theme. For jira versions 6.1 - 8.19.1+
+@name           Jira compact theme. For jira versions 6.1 - 10.3.1+
 @namespace      hubbitus.info
-@version        2.5
+@version        2.6
 @description    Compact most things of JIRA for more rationale use it. For example to see tens (most) issues on a kanban board instead 2-3 by default. Mostly usefull for the big displays (and not for the mobile devices!).
 @author         Pavel Alexeev <Pahan@Hubbitus.info>
 ==/UserStyle== */
@@ -26,6 +26,11 @@
 		padding: 0 0 0 2em;
 	}
 
+    form.aui:not(.aui-legacy-forms) .text, .aui-header .aui-quicksearch input {
+        height: 1.4em;
+        line-height: 1.3;
+    }
+
 	/** Top menu header **/
 	.aui-dropdown2 .aui-icon-container {
 		padding-left: 25px;
@@ -42,9 +47,11 @@
 		height: 33px;
 	}
 
+    /** Was used. But bad looks on version 10+
 	#quicksearch-menu {
 		margin-top: -8px;
 	}
+    **/
 	/** /Top menu header **/
 
 	/********************************************
@@ -58,6 +65,9 @@
 		font-size: small;
 		line-height: 0.95em;
 	}
+    .issue-header .issue-header-content>.aui-page-header {
+        margin-left: 10px !important;
+    }
 
 	p {
 		text-indent: 1em;
@@ -118,6 +128,27 @@
 	.jira-editor-container {
 		width: 100%;
 	}
+
+    .criteria-list > li {
+        margin: 0 !important;
+    }
+    .query-component .search-container {
+        width: 100%;
+    }
+    .query-component .search-container .search-options-container {
+        line-height: 1;
+    }
+    .search-criteria, .search-criteria-extended {
+        display: table;
+        float: left;
+    }
+    .criteria-list .remove-filter {
+        top: -1px;
+    }
+
+    .ui-sidebar {
+        background-color: #d5d6d7;
+    }
 	/***************************************/
 	/*** Compact left search list sidebar **/
 	/***************************************/
@@ -172,6 +203,12 @@
 	.issue-list > li .splitview-issue-link > div > div.issue-content-container {
 		margin-left: 1px;
 	}
+    .list-ordering {
+        padding: 2px;
+    }
+    .navigator-sidebar.collapsed {
+        width: 13px !important;
+    }
 	/********************************************/
 	/*** end/ Compact left search list sidebar **/
 	/********************************************/
@@ -184,7 +221,7 @@
 	}
 
 	header.aui-page-header {
-		padding: 0;
+		padding: 0 0 0 4px !important;
 	}
 
 	.issue-header .command-bar .toolbar-group {
@@ -288,8 +325,9 @@
 	}
 
 	/** Edit field */
-	.editable-field form.aui {
-		margin: 0;
+	form.aui {
+		margin: 0 !important;
+        padding: 0 !important;
 	}
 	/*** end "Details move to right" **/
 
@@ -311,6 +349,11 @@
 		padding: 0;
 	}
 
+    .aui-button {
+        height: 1.4em;
+        line-height: 1.3em;
+        padding: 0px 3px;
+    }
 	.aui-toolbar2 .aui-button {
 		margin-top: 1px;
 	}
@@ -355,13 +398,14 @@
 		border-radius: 3px;
 		top: -1px;
 	}
-	.issue-body-content .item-details dl>dt {
+	.issue-body-content .item-details dl>dt, dl.people-list dt, dl.dates-list dt {
 		padding: 0;
+        line-height: 1;
 	}
 	/** Editable fields **/
 
 	/* Special highlight custom field "Block reason" */
-	strong[title='Block reason'], strong[title='Block reason'] + div{
+	strong[title='Block reason'], strong[title='Block reason'] + div {
 		border: 1px solid magenta;
 		background-color: #ff00006b;
 	}

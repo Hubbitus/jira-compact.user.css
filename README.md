@@ -48,6 +48,7 @@ You may see several enhancements here:
 Work distributed under terms of [CC BY - Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/)
 
 ## Changelog
+* 2026-11-24 Add Jira 10+ base compatibility.
 * 2026-10-20 Add initial styling compaction of the Smart Checklist
 * 2025-11-06 Center filter results table th ans status column
 * 2025-09-02 Structure table: allow statuses to break lines
